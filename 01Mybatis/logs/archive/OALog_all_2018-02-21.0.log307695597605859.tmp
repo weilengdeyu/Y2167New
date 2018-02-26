@@ -1,0 +1,41 @@
+2018-02-21 17:08:55.435 DEBUG [main]cn.happy.dao.IBookDAO.findAllBooks.debug:145 -==>  Preparing: select * from book 
+2018-02-21 17:08:55.486 DEBUG [main]cn.happy.dao.IBookDAO.findAllBooks.debug:145 -==> Parameters: 
+2018-02-21 17:08:55.509 DEBUG [main]cn.happy.dao.IBookDAO.findAllBooks.debug:145 -<==      Total: 3
+2018-02-21 17:10:08.717 DEBUG [main]cn.happy.dao.IBookDAO.findAllBooks.debug:145 -==>  Preparing: select * from book 
+2018-02-21 17:10:08.758 DEBUG [main]cn.happy.dao.IBookDAO.findAllBooks.debug:145 -==> Parameters: 
+2018-02-21 17:10:08.812 DEBUG [main]cn.happy.dao.IBookDAO.findAllBooks.debug:145 -<==      Total: 3
+2018-02-21 17:10:46.452 DEBUG [main]cn.happy.dao.IBookDAO.findAllBooks.debug:145 -==>  Preparing: select * from book 
+2018-02-21 17:10:46.482 DEBUG [main]cn.happy.dao.IBookDAO.findAllBooks.debug:145 -==> Parameters: 
+2018-02-21 17:10:46.512 DEBUG [main]cn.happy.dao.IBookDAO.findAllBooks.debug:145 -<==      Total: 3
+2018-02-21 17:11:03.844 DEBUG [main]cn.happy.dao.IBookDAO.findAllBooks.debug:145 -==>  Preparing: select * from book 
+2018-02-21 17:11:03.901 DEBUG [main]cn.happy.dao.IBookDAO.findAllBooks.debug:145 -==> Parameters: 
+2018-02-21 17:11:03.925 DEBUG [main]cn.happy.dao.IBookDAO.findAllBooks.debug:145 -<==      Total: 3
+2018-02-21 17:12:18.975 DEBUG [main]cn.happy.dao.IBookDAO.findAllBooks.debug:145 -==>  Preparing: select * from book 
+2018-02-21 17:12:19.005 DEBUG [main]cn.happy.dao.IBookDAO.findAllBooks.debug:145 -==> Parameters: 
+2018-02-21 17:12:19.041 DEBUG [main]cn.happy.dao.IBookDAO.findAllBooks.debug:145 -<==      Total: 3
+2018-02-21 17:15:15.897 DEBUG [main]org.apache.ibatis.logging.LogFactory.setImplementation:135 -Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-02-21 17:15:15.998 DEBUG [main]org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll:316 -PooledDataSource forcefully closed/removed all connections.
+2018-02-21 17:15:15.999 DEBUG [main]org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll:316 -PooledDataSource forcefully closed/removed all connections.
+2018-02-21 17:15:15.999 DEBUG [main]org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll:316 -PooledDataSource forcefully closed/removed all connections.
+2018-02-21 17:15:15.999 DEBUG [main]org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll:316 -PooledDataSource forcefully closed/removed all connections.
+2018-02-21 17:15:16.097 DEBUG [main]org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection:136 -Opening JDBC Connection
+2018-02-21 17:15:16.267 DEBUG [main]org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection:387 -Created connection 1021095954.
+2018-02-21 17:15:16.267 DEBUG [main]org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit:100 -Setting autocommit to false on JDBC Connection [com.mysql.jdbc.Connection@3cdcb012]
+2018-02-21 17:15:16.269 DEBUG [main]cn.happy.dao.IBookDAO.findAllBooks.debug:145 -==>  Preparing: select * from book 
+2018-02-21 17:15:16.269 DEBUG [main]cn.happy.dao.IBookDAO.findAllBooks.debug:145 -==>  Preparing: select * from book 
+2018-02-21 17:15:16.297 DEBUG [main]cn.happy.dao.IBookDAO.findAllBooks.debug:145 -==> Parameters: 
+2018-02-21 17:15:16.297 DEBUG [main]cn.happy.dao.IBookDAO.findAllBooks.debug:145 -==> Parameters: 
+2018-02-21 17:15:16.325 DEBUG [main]cn.happy.dao.IBookDAO.findAllBooks.debug:145 -<==      Total: 3
+2018-02-21 17:15:16.325 DEBUG [main]cn.happy.dao.IBookDAO.findAllBooks.debug:145 -<==      Total: 3
+2018-02-21 17:15:16.326 DEBUG [main]org.apache.ibatis.transaction.jdbc.JdbcTransaction.resetAutoCommit:122 -Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.Connection@3cdcb012]
+2018-02-21 17:15:16.326 DEBUG [main]org.apache.ibatis.transaction.jdbc.JdbcTransaction.close:90 -Closing JDBC Connection [com.mysql.jdbc.Connection@3cdcb012]
+2018-02-21 17:15:16.327 DEBUG [main]org.apache.ibatis.datasource.pooled.PooledDataSource.pushConnection:344 -Returned connection 1021095954 to pool.
+2018-02-21 17:18:34.760 DEBUG [main]cn.happy.dao.IBookDAO.findAllBooks.debug:145 -==>  Preparing: select * from book 
+2018-02-21 17:18:34.760 DEBUG [main]cn.happy.dao.IBookDAO.findAllBooks.debug:145 -==>  Preparing: select * from book 
+2018-02-21 17:18:34.795 DEBUG [main]cn.happy.dao.IBookDAO.findAllBooks.debug:145 -==> Parameters: 
+2018-02-21 17:18:34.795 DEBUG [main]cn.happy.dao.IBookDAO.findAllBooks.debug:145 -==> Parameters: 
+2018-02-21 17:18:34.819 DEBUG [main]cn.happy.dao.IBookDAO.findAllBooks.debug:145 -<==      Total: 3
+2018-02-21 17:18:34.819 DEBUG [main]cn.happy.dao.IBookDAO.findAllBooks.debug:145 -<==      Total: 3
+2018-02-21 17:19:31.403 DEBUG [main]cn.happy.dao.IBookDAO.findAllBooks.debug:145 -==>  Preparing: select * from book 
+2018-02-21 17:19:31.435 DEBUG [main]cn.happy.dao.IBookDAO.findAllBooks.debug:145 -==> Parameters: 
+2018-02-21 17:19:31.457 DEBUG [main]cn.happy.dao.IBookDAO.findAllBooks.debug:145 -<==      Total: 3

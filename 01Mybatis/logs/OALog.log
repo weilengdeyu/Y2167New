@@ -1,0 +1,123 @@
+2018-02-26 14:18:34.899 DEBUG [main]cn.happy.dao.IDeptDAO.getEmpsByDeptNo.debug:145 -==>  Preparing: select deptName,empName from dept,emp where dept.deptNo=emp.deptNo and dept.deptNo=? 
+2018-02-26 14:18:35.003 DEBUG [main]cn.happy.dao.IDeptDAO.getEmpsByDeptNo.debug:145 -==> Parameters: 1(Integer)
+2018-02-26 14:18:35.072 DEBUG [main]cn.happy.dao.IDeptDAO.getEmpsByDeptNo.debug:145 -<==      Total: 7
+2018-02-26 14:19:43.012 DEBUG [main]cn.happy.dao.IDeptDAO.getEmpsByDeptNo.debug:145 -==>  Preparing: select deptName,empName from dept,emp where dept.deptNo=emp.deptNo and dept.deptNo=? 
+2018-02-26 14:19:43.041 DEBUG [main]cn.happy.dao.IDeptDAO.getEmpsByDeptNo.debug:145 -==> Parameters: 1(Integer)
+2018-02-26 14:19:43.092 DEBUG [main]cn.happy.dao.IDeptDAO.getEmpsByDeptNo.debug:145 -<==      Total: 7
+2018-02-26 14:23:43.917 DEBUG [main]cn.happy.dao.IDeptDAO.getEmpsByDeptNo.debug:145 -==>  Preparing: select deptName,empName from dept,emp where dept.deptNo=emp.deptNo and dept.deptNo=? 
+2018-02-26 14:23:43.946 DEBUG [main]cn.happy.dao.IDeptDAO.getEmpsByDeptNo.debug:145 -==> Parameters: 1(Integer)
+2018-02-26 14:23:43.978 DEBUG [main]cn.happy.dao.IDeptDAO.getEmpsByDeptNo.debug:145 -<==      Total: 7
+2018-02-26 14:30:57.510 DEBUG [main]cn.happy.dao.IDeptDAO.getEmpsByDeptNo.debug:145 -==>  Preparing: select deptName,empName from dept,emp where dept.deptNo=emp.deptNo and dept.deptNo=? 
+2018-02-26 14:30:57.539 DEBUG [main]cn.happy.dao.IDeptDAO.getEmpsByDeptNo.debug:145 -==> Parameters: 1(Integer)
+2018-02-26 14:30:57.566 DEBUG [main]cn.happy.dao.IDeptDAO.getEmpsByDeptNo.debug:145 -<==      Total: 7
+2018-02-26 14:31:12.848 DEBUG [main]cn.happy.dao.IDeptDAO.getEmpsByDeptNo.debug:145 -==>  Preparing: select dept.deptNo,deptName,empName from dept,emp where dept.deptNo=emp.deptNo and dept.deptNo=? 
+2018-02-26 14:31:12.877 DEBUG [main]cn.happy.dao.IDeptDAO.getEmpsByDeptNo.debug:145 -==> Parameters: 1(Integer)
+2018-02-26 14:31:12.918 DEBUG [main]cn.happy.dao.IDeptDAO.getEmpsByDeptNo.debug:145 -<==      Total: 7
+2018-02-26 14:36:23.576 DEBUG [main]cn.happy.dao.IDeptDAO.getEmpsByDeptNo.debug:145 -==>  Preparing: select * from dept,emp where dept.deptNo=emp.deptNo and dept.deptNo=? 
+2018-02-26 14:36:23.609 DEBUG [main]cn.happy.dao.IDeptDAO.getEmpsByDeptNo.debug:145 -==> Parameters: 1(Integer)
+2018-02-26 14:36:23.629 DEBUG [main]cn.happy.dao.IDeptDAO.getEmpsByDeptNo.debug:145 -<==      Total: 7
+2018-02-26 14:52:47.956 DEBUG [main]cn.happy.dao.IDeptDAO.getEmpsByDeptNo.debug:145 -==>  Preparing: select * from dept,emp where dept.deptNo=emp.deptNo and dept.deptNo=? 
+2018-02-26 14:52:47.986 DEBUG [main]cn.happy.dao.IDeptDAO.getEmpsByDeptNo.debug:145 -==> Parameters: 1(Integer)
+2018-02-26 14:52:48.007 DEBUG [main]cn.happy.dao.IDeptDAO.getEmpsByDeptNo.debug:145 -<==      Total: 7
+2018-02-26 14:54:42.263 DEBUG [main]cn.happy.dao.IDeptDAO.getEmpsByDeptNo.debug:145 -==>  Preparing: select * from dept,emp where dept.deptNo=emp.deptNo and dept.deptNo=? 
+2018-02-26 14:54:42.326 DEBUG [main]cn.happy.dao.IDeptDAO.getEmpsByDeptNo.debug:145 -==> Parameters: 1(Integer)
+2018-02-26 14:54:42.346 DEBUG [main]cn.happy.dao.IDeptDAO.getEmpsByDeptNo.debug:145 -<==      Total: 7
+2018-02-26 14:55:32.083 DEBUG [main]cn.happy.dao.IDeptDAO.getEmpsByDeptNo.debug:145 -==>  Preparing: select * from dept,emp where dept.deptNo=emp.deptNo and dept.deptNo=? 
+2018-02-26 14:55:32.112 DEBUG [main]cn.happy.dao.IDeptDAO.getEmpsByDeptNo.debug:145 -==> Parameters: 1(Integer)
+2018-02-26 14:55:32.164 DEBUG [main]cn.happy.dao.IDeptDAO.getEmpsByDeptNo.debug:145 -<==      Total: 7
+2018-02-26 15:01:18.099 DEBUG [main]cn.happy.dao.IDeptDAO.getEmpsByDeptNoMultiSQL.debug:145 -==>  Preparing: select * from dept where deptNo=? 
+2018-02-26 15:01:18.131 DEBUG [main]cn.happy.dao.IDeptDAO.getEmpsByDeptNoMultiSQL.debug:145 -==> Parameters: 1(Integer)
+2018-02-26 15:01:18.164 DEBUG [main]cn.happy.dao.IDeptDAO.selectEmpsByNo.debug:145 -====>  Preparing: select * from emp where deptno=? 
+2018-02-26 15:01:18.165 DEBUG [main]cn.happy.dao.IDeptDAO.selectEmpsByNo.debug:145 -====> Parameters: 1(Integer)
+2018-02-26 15:01:18.168 DEBUG [main]cn.happy.dao.IDeptDAO.selectEmpsByNo.debug:145 -<====      Total: 7
+2018-02-26 15:01:18.169 DEBUG [main]cn.happy.dao.IDeptDAO.getEmpsByDeptNoMultiSQL.debug:145 -<==      Total: 1
+2018-02-26 15:17:32.296 DEBUG [main]cn.happy.dao.IEmpDAO.getDeptByEmpNo.debug:145 -==>  Preparing: SELECT * FROM dept,emp WHERE dept.deptNo=emp.deptNo AND empno=? 
+2018-02-26 15:17:32.325 DEBUG [main]cn.happy.dao.IEmpDAO.getDeptByEmpNo.debug:145 -==> Parameters: 1(Integer)
+2018-02-26 15:17:32.343 DEBUG [main]cn.happy.dao.IEmpDAO.getDeptByEmpNo.debug:145 -<==      Total: 1
+2018-02-26 15:23:15.481 DEBUG [main]cn.happy.dao.IEmpDAO.getDeptByEmpNoMulti.debug:145 -==>  Preparing: SELECT * FROM emp WHERE empno=? 
+2018-02-26 15:23:15.514 DEBUG [main]cn.happy.dao.IEmpDAO.getDeptByEmpNoMulti.debug:145 -==> Parameters: 1(Integer)
+2018-02-26 15:23:15.541 DEBUG [main]cn.happy.dao.IEmpDAO.selectDeptByDeptNo.debug:145 -====>  Preparing: select * from dept where deptno=? 
+2018-02-26 15:23:15.542 DEBUG [main]cn.happy.dao.IEmpDAO.selectDeptByDeptNo.debug:145 -====> Parameters: 1(Integer)
+2018-02-26 15:23:15.543 DEBUG [main]cn.happy.dao.IEmpDAO.selectDeptByDeptNo.debug:145 -<====      Total: 1
+2018-02-26 15:23:15.544 DEBUG [main]cn.happy.dao.IEmpDAO.getDeptByEmpNoMulti.debug:145 -<==      Total: 1
+2018-02-26 15:23:30.369 DEBUG [main]cn.happy.dao.IEmpDAO.getDeptByEmpNo.debug:145 -==>  Preparing: SELECT * FROM dept,emp WHERE dept.deptNo=emp.deptNo AND empno=? 
+2018-02-26 15:23:30.399 DEBUG [main]cn.happy.dao.IEmpDAO.getDeptByEmpNo.debug:145 -==> Parameters: 1(Integer)
+2018-02-26 15:23:30.414 DEBUG [main]cn.happy.dao.IEmpDAO.getDeptByEmpNo.debug:145 -<==      Total: 1
+2018-02-26 16:09:36.395 DEBUG [main]cn.happy.dao.ITeacherDAO.findAllStudentsByTeacherId.debug:145 -==>  Preparing: SELECT * FROM teacher,student,teacher_student WHERE teacher.tid=teacher_student.tid AND student.sid=teacher_student.sid AND teacher.tid=? 
+2018-02-26 16:09:36.432 DEBUG [main]cn.happy.dao.ITeacherDAO.findAllStudentsByTeacherId.debug:145 -==> Parameters: 1(Integer)
+2018-02-26 16:09:36.450 DEBUG [main]cn.happy.dao.ITeacherDAO.findAllStudentsByTeacherId.debug:145 -<==      Total: 2
+2018-02-26 17:07:24.323 DEBUG [main]cn.happy.dao.ICategoryDAO.getChildrenByPid.debug:145 -==>  Preparing: select * from category where pid=? 
+2018-02-26 17:07:24.351 DEBUG [main]cn.happy.dao.ICategoryDAO.getChildrenByPid.debug:145 -==> Parameters: 1(Integer)
+2018-02-26 17:07:24.374 DEBUG [main]cn.happy.dao.ICategoryDAO.getChildrenByPid.debug:145 -====>  Preparing: select * from category where pid=? 
+2018-02-26 17:07:24.374 DEBUG [main]cn.happy.dao.ICategoryDAO.getChildrenByPid.debug:145 -====> Parameters: 2(Integer)
+2018-02-26 17:07:24.375 DEBUG [main]cn.happy.dao.ICategoryDAO.getChildrenByPid.debug:145 -======>  Preparing: select * from category where pid=? 
+2018-02-26 17:07:24.376 DEBUG [main]cn.happy.dao.ICategoryDAO.getChildrenByPid.debug:145 -======> Parameters: 4(Integer)
+2018-02-26 17:07:24.377 DEBUG [main]cn.happy.dao.ICategoryDAO.getChildrenByPid.debug:145 -<======      Total: 0
+2018-02-26 17:07:24.379 DEBUG [main]cn.happy.dao.ICategoryDAO.getChildrenByPid.debug:145 -<====      Total: 1
+2018-02-26 17:07:24.380 DEBUG [main]cn.happy.dao.ICategoryDAO.getChildrenByPid.debug:145 -====>  Preparing: select * from category where pid=? 
+2018-02-26 17:07:24.380 DEBUG [main]cn.happy.dao.ICategoryDAO.getChildrenByPid.debug:145 -====> Parameters: 3(Integer)
+2018-02-26 17:07:24.381 DEBUG [main]cn.happy.dao.ICategoryDAO.getChildrenByPid.debug:145 -<====      Total: 0
+2018-02-26 17:07:24.382 DEBUG [main]cn.happy.dao.ICategoryDAO.getChildrenByPid.debug:145 -<==      Total: 2
+2018-02-26 17:07:40.558 DEBUG [main]cn.happy.dao.ICategoryDAO.getChildrenByPid.debug:145 -==>  Preparing: select * from category where pid=? 
+2018-02-26 17:07:40.586 DEBUG [main]cn.happy.dao.ICategoryDAO.getChildrenByPid.debug:145 -==> Parameters: 1(Integer)
+2018-02-26 17:07:40.605 DEBUG [main]cn.happy.dao.ICategoryDAO.getChildrenByPid.debug:145 -====>  Preparing: select * from category where pid=? 
+2018-02-26 17:07:40.606 DEBUG [main]cn.happy.dao.ICategoryDAO.getChildrenByPid.debug:145 -====> Parameters: 2(Integer)
+2018-02-26 17:07:40.607 DEBUG [main]cn.happy.dao.ICategoryDAO.getChildrenByPid.debug:145 -======>  Preparing: select * from category where pid=? 
+2018-02-26 17:07:40.607 DEBUG [main]cn.happy.dao.ICategoryDAO.getChildrenByPid.debug:145 -======> Parameters: 4(Integer)
+2018-02-26 17:07:40.608 DEBUG [main]cn.happy.dao.ICategoryDAO.getChildrenByPid.debug:145 -<======      Total: 0
+2018-02-26 17:07:40.609 DEBUG [main]cn.happy.dao.ICategoryDAO.getChildrenByPid.debug:145 -<====      Total: 1
+2018-02-26 17:07:40.610 DEBUG [main]cn.happy.dao.ICategoryDAO.getChildrenByPid.debug:145 -====>  Preparing: select * from category where pid=? 
+2018-02-26 17:07:40.610 DEBUG [main]cn.happy.dao.ICategoryDAO.getChildrenByPid.debug:145 -====> Parameters: 3(Integer)
+2018-02-26 17:07:40.612 DEBUG [main]cn.happy.dao.ICategoryDAO.getChildrenByPid.debug:145 -<====      Total: 0
+2018-02-26 17:07:40.612 DEBUG [main]cn.happy.dao.ICategoryDAO.getChildrenByPid.debug:145 -<==      Total: 2
+2018-02-26 17:08:26.194 DEBUG [main]cn.happy.dao.ICategoryDAO.getChildrenByPid.debug:145 -==>  Preparing: select * from category where pid=? 
+2018-02-26 17:08:26.222 DEBUG [main]cn.happy.dao.ICategoryDAO.getChildrenByPid.debug:145 -==> Parameters: 1(Integer)
+2018-02-26 17:08:26.238 DEBUG [main]cn.happy.dao.ICategoryDAO.getChildrenByPid.debug:145 -====>  Preparing: select * from category where pid=? 
+2018-02-26 17:08:26.238 DEBUG [main]cn.happy.dao.ICategoryDAO.getChildrenByPid.debug:145 -====> Parameters: 2(Integer)
+2018-02-26 17:08:26.239 DEBUG [main]cn.happy.dao.ICategoryDAO.getChildrenByPid.debug:145 -======>  Preparing: select * from category where pid=? 
+2018-02-26 17:08:26.241 DEBUG [main]cn.happy.dao.ICategoryDAO.getChildrenByPid.debug:145 -======> Parameters: 4(Integer)
+2018-02-26 17:08:26.242 DEBUG [main]cn.happy.dao.ICategoryDAO.getChildrenByPid.debug:145 -<======      Total: 0
+2018-02-26 17:08:26.243 DEBUG [main]cn.happy.dao.ICategoryDAO.getChildrenByPid.debug:145 -<====      Total: 1
+2018-02-26 17:08:26.244 DEBUG [main]cn.happy.dao.ICategoryDAO.getChildrenByPid.debug:145 -====>  Preparing: select * from category where pid=? 
+2018-02-26 17:08:26.244 DEBUG [main]cn.happy.dao.ICategoryDAO.getChildrenByPid.debug:145 -====> Parameters: 3(Integer)
+2018-02-26 17:08:26.245 DEBUG [main]cn.happy.dao.ICategoryDAO.getChildrenByPid.debug:145 -<====      Total: 0
+2018-02-26 17:08:26.246 DEBUG [main]cn.happy.dao.ICategoryDAO.getChildrenByPid.debug:145 -<==      Total: 2
+2018-02-26 22:58:35.929 DEBUG [main]cn.happy.dao.IDeptDAO.getEmpsByDeptNoMultiSQL.debug:145 -==>  Preparing: select * from dept where deptNo=? 
+2018-02-26 22:58:35.960 DEBUG [main]cn.happy.dao.IDeptDAO.getEmpsByDeptNoMultiSQL.debug:145 -==> Parameters: 1(Integer)
+2018-02-26 22:58:35.993 DEBUG [main]cn.happy.dao.IDeptDAO.selectEmpsByNo.debug:145 -====>  Preparing: select * from emp where deptno=? 
+2018-02-26 22:58:35.994 DEBUG [main]cn.happy.dao.IDeptDAO.selectEmpsByNo.debug:145 -====> Parameters: 1(Integer)
+2018-02-26 22:58:35.998 DEBUG [main]cn.happy.dao.IDeptDAO.selectEmpsByNo.debug:145 -<====      Total: 7
+2018-02-26 22:58:35.998 DEBUG [main]cn.happy.dao.IDeptDAO.getEmpsByDeptNoMultiSQL.debug:145 -<==      Total: 1
+2018-02-26 22:59:05.958 DEBUG [main]cn.happy.dao.IDeptDAO.getEmpsByDeptNoMultiSQL.debug:145 -==>  Preparing: select * from dept where deptNo=? 
+2018-02-26 22:59:05.986 DEBUG [main]cn.happy.dao.IDeptDAO.getEmpsByDeptNoMultiSQL.debug:145 -==> Parameters: 1(Integer)
+2018-02-26 22:59:06.019 DEBUG [main]cn.happy.dao.IDeptDAO.selectEmpsByNo.debug:145 -====>  Preparing: select * from emp where deptno=? 
+2018-02-26 22:59:06.020 DEBUG [main]cn.happy.dao.IDeptDAO.selectEmpsByNo.debug:145 -====> Parameters: 1(Integer)
+2018-02-26 22:59:06.023 DEBUG [main]cn.happy.dao.IDeptDAO.selectEmpsByNo.debug:145 -<====      Total: 7
+2018-02-26 22:59:06.024 DEBUG [main]cn.happy.dao.IDeptDAO.getEmpsByDeptNoMultiSQL.debug:145 -<==      Total: 1
+2018-02-26 22:59:35.773 DEBUG [main]cn.happy.dao.IDeptDAO.getEmpsByDeptNoMultiSQL.debug:145 -==>  Preparing: select * from dept where deptNo=? 
+2018-02-26 22:59:35.804 DEBUG [main]cn.happy.dao.IDeptDAO.getEmpsByDeptNoMultiSQL.debug:145 -==> Parameters: 1(Integer)
+2018-02-26 22:59:36.177 DEBUG [main]cn.happy.dao.IDeptDAO.getEmpsByDeptNoMultiSQL.debug:145 -<==      Total: 1
+2018-02-26 22:59:36.178 DEBUG [main]cn.happy.dao.IDeptDAO.selectEmpsByNo.debug:145 -==>  Preparing: select * from emp where deptno=? 
+2018-02-26 22:59:36.178 DEBUG [main]cn.happy.dao.IDeptDAO.selectEmpsByNo.debug:145 -==> Parameters: 1(Integer)
+2018-02-26 22:59:36.181 DEBUG [main]cn.happy.dao.IDeptDAO.selectEmpsByNo.debug:145 -<==      Total: 7
+2018-02-26 23:00:17.230 DEBUG [main]cn.happy.dao.IDeptDAO.getEmpsByDeptNoMultiSQL.debug:145 -==>  Preparing: select * from dept where deptNo=? 
+2018-02-26 23:00:17.258 DEBUG [main]cn.happy.dao.IDeptDAO.getEmpsByDeptNoMultiSQL.debug:145 -==> Parameters: 1(Integer)
+2018-02-26 23:00:17.334 DEBUG [main]cn.happy.dao.IDeptDAO.getEmpsByDeptNoMultiSQL.debug:145 -<==      Total: 1
+2018-02-26 23:03:36.275 DEBUG [main]cn.happy.dao.IDeptDAO.getEmpsByDeptNoMultiSQL.debug:145 -==>  Preparing: select * from dept where deptNo=? 
+2018-02-26 23:03:36.302 DEBUG [main]cn.happy.dao.IDeptDAO.getEmpsByDeptNoMultiSQL.debug:145 -==> Parameters: 1(Integer)
+2018-02-26 23:03:36.376 DEBUG [main]cn.happy.dao.IDeptDAO.getEmpsByDeptNoMultiSQL.debug:145 -<==      Total: 1
+2018-02-26 23:03:36.377 DEBUG [main]cn.happy.dao.IDeptDAO.selectEmpsByNo.debug:145 -==>  Preparing: select * from emp where deptno=? 
+2018-02-26 23:03:36.377 DEBUG [main]cn.happy.dao.IDeptDAO.selectEmpsByNo.debug:145 -==> Parameters: 1(Integer)
+2018-02-26 23:03:36.379 DEBUG [main]cn.happy.dao.IDeptDAO.selectEmpsByNo.debug:145 -<==      Total: 7
+2018-02-26 23:03:54.559 DEBUG [main]cn.happy.dao.IDeptDAO.getEmpsByDeptNoMultiSQL.debug:145 -==>  Preparing: select * from dept where deptNo=? 
+2018-02-26 23:03:54.592 DEBUG [main]cn.happy.dao.IDeptDAO.getEmpsByDeptNoMultiSQL.debug:145 -==> Parameters: 1(Integer)
+2018-02-26 23:03:54.651 DEBUG [main]cn.happy.dao.IDeptDAO.getEmpsByDeptNoMultiSQL.debug:145 -<==      Total: 1
+2018-02-26 23:07:03.028 DEBUG [main]cn.happy.dao.IDeptDAO.getEmpsByDeptNoMultiSQL.debug:145 -==>  Preparing: select * from dept where deptNo=? 
+2018-02-26 23:07:03.055 DEBUG [main]cn.happy.dao.IDeptDAO.getEmpsByDeptNoMultiSQL.debug:145 -==> Parameters: 1(Integer)
+2018-02-26 23:07:03.115 DEBUG [main]cn.happy.dao.IDeptDAO.getEmpsByDeptNoMultiSQL.debug:145 -<==      Total: 1
+2018-02-26 23:07:28.075 DEBUG [main]cn.happy.dao.IDeptDAO.getEmpsByDeptNoMultiSQL.debug:145 -==>  Preparing: select * from dept where deptNo=? 
+2018-02-26 23:07:28.109 DEBUG [main]cn.happy.dao.IDeptDAO.getEmpsByDeptNoMultiSQL.debug:145 -==> Parameters: 1(Integer)
+2018-02-26 23:07:28.163 DEBUG [main]cn.happy.dao.IDeptDAO.getEmpsByDeptNoMultiSQL.debug:145 -<==      Total: 1
+2018-02-26 23:07:28.164 DEBUG [main]cn.happy.dao.IDeptDAO.selectEmpsByNo.debug:145 -==>  Preparing: select * from emp where deptno=? 
+2018-02-26 23:07:28.164 DEBUG [main]cn.happy.dao.IDeptDAO.selectEmpsByNo.debug:145 -==> Parameters: 1(Integer)
+2018-02-26 23:07:28.167 DEBUG [main]cn.happy.dao.IDeptDAO.selectEmpsByNo.debug:145 -<==      Total: 7

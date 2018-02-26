@@ -1,0 +1,23 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="04WDKBigDataEngineExamSystem:war exploded">
+    <output-path>$PROJECT_DIR$/04WDKBigDataEngineExamSystem/target/Y2167</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="04WDKBigDataEngineExamSystem" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: MySQL:mysql-connector-java:5.0.8" />
+          <element id="library" level="project" name="Maven: javax.servlet:jstl:1.2" />
+          <element id="library" level="project" name="Maven: javaee:javaee-api:5" />
+          <element id="library" level="project" name="Maven: com.alibaba:fastjson:1.2.41" />
+          <element id="library" level="project" name="Maven: io.netty:netty:3.10.5.Final" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/04WDKBigDataEngineExamSystem/target/Y2167/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="04WDKBigDataEngineExamSystem/web/Web" />
+    </root>
+  </artifact>
+</component>

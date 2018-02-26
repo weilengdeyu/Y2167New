@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="01Mybatis" />
+        <module name="02MyBatisHigher" />
+        <module name="03teachsys" />
+        <module name="04WDKBigDataEngineExamSystem" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="01Mybatis" target="1.5" />
+      <module name="02MyBatisHigher" target="1.5" />
+      <module name="03teachsys" target="1.5" />
+      <module name="04WDKBigDataEngineExamSystem" target="1.5" />
+      <module name="Y2167" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

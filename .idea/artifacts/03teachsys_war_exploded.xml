@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="03teachsys:war exploded">
+    <output-path>$PROJECT_DIR$/03teachsys/target/03teachsys</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="03teachsys" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/03teachsys/target/03teachsys/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="03teachsys/web/Web" />
+    </root>
+  </artifact>
+</component>

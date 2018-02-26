@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <script src="./teach/hm.js.下载"></script>
+    <script>
+        !function(a) {
+            var b = /iPhone/i, c = /iPod/i, d = /iPad/i, e = /(?=.*bAndroidb)(?=.*bMobileb)/i, f = /Android/i, g = /(?=.*bAndroidb)(?=.*bSD4930URb)/i, h = /(?=.*bAndroidb)(?=.*b(?:KFOT|KFTT|KFJWI|KFJWA|KFSOWI|KFTHWI|KFTHWA|KFAPWI|KFAPWA|KFARWI|KFASWI|KFSAWI|KFSAWA)b)/i, i = /IEMobile/i, j = /(?=.*bWindowsb)(?=.*bARMb)/i, k = /BlackBerry/i, l = /BB10/i, m = /Opera Mini/i, n = /(CriOS|Chrome)(?=.*bMobileb)/i, o = /(?=.*bFirefoxb)(?=.*bMobileb)/i, p = new RegExp(
+                "(?:Nexus 7|BNTV250|Kindle Fire|Silk|GT-P1000)", "i"), q = function(
+                a, b) {
+                return a.test(b)
+            }, r = function(a) {
+                var r = a || navigator.userAgent, s = r.split("[FBAN");
+                return "undefined" != typeof s[1] && (r = s[0]), this.apple = {
+                    phone : q(b, r),
+                    ipod : q(c, r),
+                    tablet : !q(b, r) && q(d, r),
+                    device : q(b, r) || q(c, r) || q(d, r)
+                }, this.amazon = {
+                    phone : q(g, r),
+                    tablet : !q(g, r) && q(h, r),
+                    device : q(g, r) || q(h, r)
+                }, this.android = {
+                    phone : q(g, r) || q(e, r),
+                    tablet : !q(g, r) && !q(e, r) && (q(h, r) || q(f, r)),
+                    device : q(g, r) || q(h, r) || q(e, r) || q(f, r)
+                }, this.windows = {
+                    phone : q(i, r),
+                    tablet : q(j, r),
+                    device : q(i, r) || q(j, r)
+                }, this.other = {
+                    blackberry : q(k, r),
+                    blackberry10 : q(l, r),
+                    opera : q(m, r),
+                    firefox : q(o, r),
+                    chrome : q(n, r),
+                    device : q(k, r) || q(l, r) || q(m, r) || q(o, r) || q(n, r)
+                }, this.seven_inch = q(p, r), this.any = this.apple.device
+                    || this.android.device || this.windows.device
+                    || this.other.device || this.seven_inch,
+                    this.phone = this.apple.phone || this.android.phone
+                        || this.windows.phone,
+                    this.tablet = this.apple.tablet || this.android.tablet
+                        || this.windows.tablet,
+                    "undefined" == typeof window ? this : void 0
+            }, s = function() {
+                var a = new r;
+                return a.Class = r, a
+            };
+            "undefined" != typeof module && module.exports
+            && "undefined" == typeof window ? module.exports = r
+                : "undefined" != typeof module && module.exports
+                && "undefined" != typeof window ? module.exports = s()
+                    : "function" == typeof define && define.amd ? define(
+                            "isMobile", [], a.isMobile = s())
+                        : a.isMobile = s()
+        }(this);
+    </script>
+    <title>五道口教育|五道口北大青鸟|五道口微冷的雨|五道口视频课程|IT培训专业机构五道口学院|www.cnblogs.com/weilengdeyu</title>
+    <meta name="renderer" content="webkit">
+    <meta name="keywords"
+          content="五道口教育,五道口北大青鸟,五道口微冷的雨,五道口IT视频课程,IT专业培训机构五道口学院">
+    <meta name="description"
+          content="五道口学院汇集了五道口学院顶级名师真实授课视频，囊括了各个产品各阶段的随堂视频，且全部免费，用户可以放心观看。">
+    <link href="./teach/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="./teach/css.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+<div class="index-nav">
+    <div class="nav-main">
+        <a href="http://www.cnblogs.com/weilengdeyu">
+            <div class="nav-left">首页</div>
+        </a>
+        <div class="nav-right">
+            <ul>
+                <li><a href="http://www.qifa8.com/cate/youer.html">A-S1</a>
+                </li>
+                <li><a href="http://www.qifa8.com/cate/4.html">A-S2</a>
+                </li>
+                <li><a href="http://www.qifa8.com/cate/6.html">A-Y2</a>
+                </li>
+                <li><a href="http://www.qifa8.com/cate/5.html">XSH-U1</a>
+                </li>
+                <li><a href="http://www.qifa8.com/cate/9.html">XSH-U2</a>
+                </li>
+                <li><a href="http://www.qifa8.com/cate/7.html">XSH-U3</a>
+                </li>
+                <li><a href="http://www.qifa8.com/cate/8.html">B-S1</a>
+                </li>
+                <li><a href="http://www.qifa8.com/cate/1.html">B-S2</a>
+                </li>
+                <li><a href="http://www.qifa8.com/cate/3.html">B-Y2</a>
+                </li>
+                <li><a href="http://www.qifa8.com/cate/2.html">大数据</a>
+                </li>
+                <li><a href="http://www.qifa8.com/cate/gao.html">云计算</a>
+                </li>
+            </ul>
+        </div>
+        <div id="click-share">
+            <img src="./teach/btn-share.png">
+        </div>
+    </div>
+</div>
+<div id="share" class="modal">
+    <div class="modal-header">
+        <h3 id="myModalLabel">复制分享</h3>
+    </div>
+    <div class="modal-body">
+        <p>
+            <textarea name="" id="share-text" cols="30" rows="2">技能点全覆盖，博客链接一条龙，老师博客地址：http://www.cnblogs.com/weilengdeyu</textarea>
+        </p>
+    </div>
+    <div class="modal-footer">
+        <button id="btn-download" class="btn">立即下载</button>
+        <button id="share-close" class="btn" data-dismiss="modal"
+                aria-hidden="true">关闭</button>
+        <button id="share-copy" data-clipboard-target="share-text"
+                class="btn btn-primary">复制</button>
+    </div>
+</div>
+<script type="text/javascript" src="./teach/ZeroClipboard.js.下载"></script>
+<script type="text/javascript">
+    document.getElementById("click-share").onclick = function() {
+        document.getElementById("share").style.display = "block";
+    };
+    document.getElementById("btn-download").onclick = function() {
+        window.open("http://www.cnblogs.com/weilengdeyu");
+    };
+    document.getElementById("share-close").onclick = function() {
+        document.getElementById("share").style.display = "none";
+    };
+    var ie6 = !-[ 1, ] && !window.XMLHttpRequest;
+    if (ie6) {
+        //针对ie6
+        document.getElementById("share-copy").onclick = function() {
+            window.clipboardData.setData("Text", document
+                .getElementById("share-text").value);
+            document.getElementById("share").style.display = "none";
+            alert("复制成功,你可以分享给你的好友啦~");
+        }
+    } else {
+        // 定义一个新的复制对象
+        var clip = new ZeroClipboard(document.getElementById("share-copy"),
+            {
+                moviePath : "/Public/js/ZeroClipboard.swf"
+            });
+
+        // 复制内容到剪贴板成功后的操作
+        clip.on('complete', function(client, args) {
+            document.getElementById("share").style.display = "none";
+            alert("复制成功,你可以分享给你的好友啦~");
+        });
+    }
+</script>
+<div class="index-cen">
+    <ul class="yew">
+       <!-- <li style="position:relative;"></li>-->
+        <div id="container"> </div>
+        <script src='js/delaunay.js'></script>
+        <script src='js/TweenMax.js'></script>
+        <script>
+
+            const TWO_PI = Math.PI * 2;
+
+            var images = [],
+                imageIndex = 0;
+
+            var image,
+                imageWidth = 1000,
+                imageHeight = 435;
+
+            var vertices = [],
+                indices = [],
+                prevfrag = [],
+                fragments = [];
+
+            var margin = -100;
+
+            var container = document.getElementById('container');
+
+            var clickPosition = [imageWidth * 0.5, imageHeight * 0.5];
+
+            window.onload = function() {
+                TweenMax.set(container, {perspective:500});
+
+                // images from http://www.hdwallpapers.in
+                var urls = [
+                        'images/111.png',
+                        'images/222.png',
+                        'images/111.png',
+                        'images/111.png'
+                    ],
+                    image,
+                    loaded = 0;
+                // very quick and dirty hack to load and display the first image asap
+                images[0] = image = new Image();
+                image.onload = function() {
+                    if (++loaded === 1) {
+
+                        for (var i = 1; i <4; i++) {
+                            images[i] = image = new Image();
+
+                            image.src = urls[i];
+                        }
+                        placeImage();
+                    }
+                };
+                image.src = urls[0];
+            };
+
+            function placeImage(transitionIn) {
+                image = images[imageIndex];
+
+                if (++imageIndex === images.length) imageIndex = 0;
+
+                var num = Math.random();
+                if(num < .25) {
+                    image.direction = "left";
+                } else if(num < .5) {
+                    image.direction = "top";
+                } else if(num < .75) {
+                    image.direction = "bottom";
+                } else {
+                    image.direction = "right";
+                }
+
+                container.appendChild(image);
+                image.style.opacity = 0;
+
+                if (transitionIn !== false) {
+                    triangulateIn();
+                }
+            }
+
+            function triangulateIn(event) {
+                var box = image.getBoundingClientRect(),
+                    top = box.top,
+                    left = box.left;
+
+                if(image.direction == "left") {
+                    clickPosition[0] = 0;
+                    clickPosition[1] = imageHeight / 2;
+                } else if(image.direction == "top") {
+                    clickPosition[0] = imageWidth / 2;
+                    clickPosition[1] = 0;
+                } else if(image.direction == "bottom") {
+                    clickPosition[0] = imageWidth / 2;
+                    clickPosition[1] = imageHeight;
+                } else if(image.direction == "right") {
+                    clickPosition[0] = imageWidth;
+                    clickPosition[1] = imageHeight / 2;
+                }
+
+
+                triangulate();
+                build();
+            }
+
+            function triangulate() {
+                for(var i = 0; i < 40; i++) {
+                    x = -margin + Math.random() * (imageWidth + margin * 2);
+                    y = -margin + Math.random() * (imageHeight + margin * 2);
+                    vertices.push([x, y]);
+                }
+                vertices.push([0,0]);
+                vertices.push([imageWidth,0]);
+                vertices.push([imageWidth, imageHeight]);
+                vertices.push([0, imageHeight]);
+
+                vertices.forEach(function(v) {
+                    v[0] = clamp(v[0], 0, imageWidth);
+                    v[1] = clamp(v[1], 0, imageHeight);
+                });
+
+                indices = Delaunay.triangulate(vertices);
+            }
+
+            function build() {
+                var p0, p1, p2,
+                    fragment;
+
+                var tl0 = new TimelineMax({onComplete:buildCompleteHandler});
+
+                for (var i = 0; i < indices.length; i += 3) {
+                    p0 = vertices[indices[i + 0]];
+                    p1 = vertices[indices[i + 1]];
+                    p2 = vertices[indices[i + 2]];
+
+                    fragment = new Fragment(p0, p1, p2);
+
+                    var dx = fragment.centroid[0] - clickPosition[0],
+                        dy = fragment.centroid[1] - clickPosition[1],
+                        d = Math.sqrt(dx * dx + dy * dy),
+                        rx = 30 * sign(dy),
+                        ry = 90 * -sign(dx),
+                        delay = d * 0.003 * randomRange(0.9, 1.1);
+                    fragment.canvas.style.zIndex = Math.floor(d).toString();
+
+                    var tl1 = new TimelineMax();
+
+                    if(image.direction == "left") {
+                        rx = Math.abs(rx);
+                        ry = 0;
+                    } else if(image.direction == "top") {
+                        rx = 0;
+                        ry = Math.abs(ry);
+                    } else if(image.direction == "bottom") {
+                        rx = 0;
+                        ry = - Math.abs(ry);
+                    } else if(image.direction == "right") {
+                        rx = - Math.abs(rx);
+                        ry = 0;
+                    }
+
+                    tl1.from(fragment.canvas, 1, {
+                        z:-50,
+                        rotationX:rx,
+                        rotationY:ry,
+                        scaleX:0,
+                        scaleY:0,
+                        ease:Cubic.easeIn
+                    });
+                    tl1.from(fragment.canvas, 0.4,{alpha:0}, 0.6);
+
+                    tl0.insert(tl1, delay);
+
+                    fragments.push(fragment);
+                    container.appendChild(fragment.canvas);
+                }
+            }
+
+            function buildCompleteHandler() {
+                // add pooling?
+                image.style.opacity = 1;
+                image.addEventListener('transitionend', function catchTrans() {
+                    fragments.forEach(function(f) {
+                        container.removeChild(f.canvas);
+                    });
+
+                    fragments.length = 0;
+                    vertices.length = 0;
+                    indices.length = 0;
+
+                    placeImage();
+                    this.removeEventListener('transitionend',catchTrans,false);
+                }, false);
+
+            }
+
+            //////////////
+            // MATH UTILS
+            //////////////
+
+            function randomRange(min, max) {
+                return min + (max - min) * Math.random();
+            }
+
+            function clamp(x, min, max) {
+                return x < min ? min : (x > max ? max : x);
+            }
+
+            function sign(x) {
+                return x < 0 ? -1 : 1;
+            }
+
+            //////////////
+            // FRAGMENT
+            //////////////
+
+            Fragment = function(v0, v1, v2) {
+                this.v0 = v0;
+                this.v1 = v1;
+                this.v2 = v2;
+
+                this.computeBoundingBox();
+                this.computeCentroid();
+                this.createCanvas();
+                this.clip();
+            };
+            Fragment.prototype = {
+                computeBoundingBox:function() {
+                    var xMin = Math.min(this.v0[0], this.v1[0], this.v2[0]),
+                        xMax = Math.max(this.v0[0], this.v1[0], this.v2[0]),
+                        yMin = Math.min(this.v0[1], this.v1[1], this.v2[1]),
+                        yMax = Math.max(this.v0[1], this.v1[1], this.v2[1]);
+
+                    this.box = {
+                        x:Math.round(xMin),
+                        y:Math.round(yMin),
+                        w:Math.round(xMax - xMin),
+                        h:Math.round(yMax - yMin)
+                    };
+
+                },
+                computeCentroid:function() {
+                    var x = (this.v0[0] + this.v1[0] + this.v2[0]) / 3,
+                        y = (this.v0[1] + this.v1[1] + this.v2[1]) / 3;
+
+                    this.centroid = [x, y];
+                },
+                createCanvas:function() {
+                    this.canvas = document.createElement('canvas');
+                    this.canvas.width = this.box.w;
+                    this.canvas.height = this.box.h;
+                    this.canvas.style.width = this.box.w + 'px';
+                    this.canvas.style.height = this.box.h + 'px';
+                    this.canvas.style.left = this.box.x + 'px';
+                    this.canvas.style.top = this.box.y + 'px';
+                    this.ctx = this.canvas.getContext('2d');
+                },
+                clip:function() {
+                    this.ctx.save();
+                    this.ctx.translate(-this.box.x, -this.box.y);
+                    this.ctx.beginPath();
+                    this.ctx.moveTo(this.v0[0], this.v0[1]);
+                    this.ctx.lineTo(this.v1[0], this.v1[1]);
+                    this.ctx.lineTo(this.v2[0], this.v2[1]);
+                    this.ctx.closePath();
+                    this.ctx.clip();
+                    this.ctx.drawImage(image, 0, 0);
+                    this.ctx.restore();
+                }
+            };//@ sourceURL=pen.js
+        </script>
+    </ul>
+</div>
+<div style="clear:both"></div>
+<div class="index-wrap">
+    <div class="index-wrap-left">
+        <div class="index-bk">
+            <div class="index-bk-bt">
+                <div class="ind-bk-bt-mc ye">热门视频</div>
+                <div class="ind-bk-bt-fl">
+                    <a href="http://www.qifa8.com/list/10/120.html">Java基础</a><a
+                        href="http://www.qifa8.com/list/10/123.html">HTML+CSS</a><a
+                        href="http://www.qifa8.com/list/10/121.html">Jquery</a><a
+                        href="http://www.qifa8.com/list/10/122.html">Mysql</a><a
+                        href="http://www.qifa8.com/list/10/117.html">Ajax</a><a
+                        href="http://www.qifa8.com/list/10/119.html">Spring</a><a
+                        href="http://www.qifa8.com/list/10/115.html">Springmvc</a><a
+                        href="http://www.qifa8.com/list/10/116.html">Mybatis</a><a
+                        href="http://www.qifa8.com/list/10/118.html">BigData</a>
+                </div>
+            </div>
+            <div class="index-bk-bot">
+                <div class="index-bot-ye">
+                    <ul>
+                        <li><a href="http://www.qifa8.com/list/10/115.html"><img
+                                name="" src="./teach/yr_qbeg.png" width="185">
+                        </a>
+                        </li>
+                        <li><a href="http://www.qifa8.com/list/10/116.html"><img
+                                name="" src="./teach/yr_txbeg.png" width="185">
+                        </a>
+                        </li>
+                        <li><a href="http://www.qifa8.com/list/10/117.html"><img
+                                name="" src="./teach/yr_xgs.png" width="185">
+                        </a>
+                        </li>
+                        <li><a href="http://www.qifa8.com/list/10/118.html"><img
+                                name="" src="./teach/yr_qhlzxtd.png" width="185">
+                        </a>
+                        </li>
+                        <li><a href="http://www.qifa8.com/list/10/119.html"><img
+                                name="" src="./teach/yr_yeqmswgwsm.png" width="185">
+                        </a>
+                        </li>
+                        <li><a href="http://www.qifa8.com/list/10/120.html"><img
+                                name="" src="./teach/yr_cygs.png" width="185">
+                        </a>
+                        </li>
+                        <li><a href="http://www.qifa8.com/list/10/121.html"><img
+                                name="" src="./teach/yr_sx.png" width="185">
+                        </a>
+                        </li>
+                        <li><a href="http://www.qifa8.com/list/10/123.html"><img
+                                name="" src="./teach/yr_yw.png" width="185">
+                        </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="index-bk">
+            <div class="index-bk-bt">
+                <div class="ind-bk-bt-mc gz">ACCP</div>
+                <div class="ind-bk-bt-fl">
+                    <a href="http://www.qifa8.com/cate/19.html">S1</a><a
+                        href="http://www.qifa8.com/cate/15.html">S2</a><a
+                        href="http://www.qifa8.com/cate/18.html">Y2</a>
+                </div>
+            </div>
+            <div class="index-bk-bot">
+                <a href="http://www.qifa8.com/cate/gao.html"><img
+                        src="./teach/bk-pic4.jpg">
+                </a>
+            </div>
+        </div>
+        <div class="index-bk">
+            <div class="index-bk-bt">
+                <div class="ind-bk-bt-mc cz">Benet</div>
+                <div class="ind-bk-bt-fl">
+                    <a href="http://www.qifa8.com/cate/1.html">S1</a><a
+                        href="http://www.qifa8.com/cate/3.html">S2</a><a
+                        href="http://www.qifa8.com/cate/2.html">Y2</a>
+                </div>
+            </div>
+            <div class="index-bk-bot">
+                <a href="http://www.qifa8.com/cate/chu.html"><img
+                        src="./teach/bk-pic3.jpg">
+                </a>
+            </div>
+        </div>
+        <div class="index-bk">
+            <div class="index-bk-bt">
+                <div class="ind-bk-bt-mc xx">学士后</div>
+                <div class="ind-bk-bt-fl">
+                    <a href="http://www.qifa8.com/cate/4.html">U1</a>
+                    <a href="http://www.qifa8.com/cate/6.html">U2</a>
+                    <a href="http://www.qifa8.com/cate/5.html">U3</a>
+                </div>
+            </div>
+            <div class="index-bk-bot">
+                <a href="http://www.qifa8.com/cate/xiao.html"><img
+                        src="./teach/bk-pic2.jpg">
+                </a>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="index-wrap-right">
+        <div class="index-right-top">
+            <ul>
+                <li class="top-100"><a href="note.html">五道口学院经典笔记</a>
+                </li>
+                <li class="top-50"><a href="http://www.qifa8.com/top50.html">五道口学院项目集训</a>
+                </li>
+                <li class="tupu"><a href="http://www.qifa8.com/tupu.html">五道口学院活动集锦</a>
+                </li>
+            </ul>
+        </div>
+        <div class="index-right-yj">
+            <div class="index-right-yj-bt">意见反馈</div>
+            <div class="index-right-yj-ewm">
+                <ul>
+                    <li class="pic"><img src="./teach/yj-ewm.png">
+                    </li>
+                    <li class="text">使用QQ手机版扫描二维码</li>
+                </ul>
+            </div>
+            <a target="_blank"
+               href="http://shang.qq.com/wpa/qunwpa?idkey=ce6cf1e1f17098b46800a1b1d729fa8d4458c6cf4081bba1d27bf05ada6be279"><div
+                    class="index-right-yj-qq">( 群号: 536670913 )</div>
+            </a>
+        </div>
+        <div class="index-right-dc">
+            <a target="_blank" href="http://www.diaochapai.com/survey1426119"><img
+                    src="./teach/yj-dc.png">
+            </a>
+        </div>
+        <!--
+
+-->
+        <br>
+        <script src="./teach/c.js.下载" type="text/javascript"></script>
+        <br>
+        <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+</div>
+<div style="text-align: center;padding-top: 20px;"></div>
+<div style="display:none">
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?8c462cbe19f3c76e8fbf7cd3643f91eb";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</div>
+
+
+
+</body>
+</html>

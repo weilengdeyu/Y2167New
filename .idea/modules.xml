@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/01Mybatis/01Mybatis.iml" filepath="$PROJECT_DIR$/01Mybatis/01Mybatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/02MyBatisHigher/02MyBatisHigher.iml" filepath="$PROJECT_DIR$/02MyBatisHigher/02MyBatisHigher.iml" />
+      <module fileurl="file://$PROJECT_DIR$/03teachsys/03teachsys.iml" filepath="$PROJECT_DIR$/03teachsys/03teachsys.iml" />
+      <module fileurl="file://$PROJECT_DIR$/04WDKBigDataEngineExamSystem/04WDKBigDataEngineExamSystem.iml" filepath="$PROJECT_DIR$/04WDKBigDataEngineExamSystem/04WDKBigDataEngineExamSystem.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Y2167.iml" filepath="$PROJECT_DIR$/Y2167.iml" />
+    </modules>
+  </component>
+</project>
