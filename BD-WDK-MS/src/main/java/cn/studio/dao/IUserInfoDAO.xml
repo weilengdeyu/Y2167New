@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+        <!DOCTYPE mapper
+                PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+                "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.studio.dao.IUserInfoDAO">
+    <!--1.用户登录的sql-->
+    <select id="isLogin"  resultType="UserInfo">
+        select * from UserInfo where uid = #{uid} and upwd=#{upwd}
+    </select>
+
+    <!--2.检索表中所有的用户信息-->
+    <select id="listAll"  resultType="UserInfo">
+        select * from UserInfo
+    </select>
+
+    <!--3.获取用户最后一次登录时间-->
+    <select id="getLastLoginDate" resultType="java.util.Date">
+        select userLastLogin from userinfo
+        where uid=#{uid}
+    </select>
+
+    <!--4.更新用户最近一次登录时间-->
+    <update id="updateLastLoginDate">
+        update  userinfo set userLastLogin=now() WHERE uid=#{uid}
+    </update>
+
+    <!--5.写一个获取单页数据的方法-->
+    <select id="getOnePageData"  resultType="UserInfo">
+        select * from userinfo
+        <where>
+            <if test="uname!=null">
+               and  uname like '%' #{uname} '%'
+            </if>
+        </where>
+        limit #{pageIndex},#{pageSize}
+    </select>
+
+    <!--06.写一个获取整张表记录总数的方法-->
+    <select id="getTotalCount" resultType="int">
+        select count(1) from userinfo
+        <where>
+            <if test="uname!=null">
+                and  uname like '%' #{uname} '%'
+            </if>
+        </where>
+    </select>
+</mapper>
