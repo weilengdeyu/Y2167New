@@ -1,0 +1,29 @@
+<html xmlns:v-bind="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h2>Hello Vue!</h2>
+<input type="text" id="userName"/>
+<br/>
+<span id="uName"></span>
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script type="text/javascript">
+
+   var obj={
+       pwd:"123456"
+   };
+   Object.defineProperty(obj,"username",{
+       get:function () {
+
+       },
+       set:function (val) {
+           document.getElementById("uName").innerHTML=val;
+           document.getElementById("userName").value=val;
+       }
+   })
+</script>
+</body>
+</html>
