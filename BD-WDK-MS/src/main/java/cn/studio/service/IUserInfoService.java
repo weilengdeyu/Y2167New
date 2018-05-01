@@ -1,6 +1,7 @@
 package cn.studio.service;
 
 import cn.studio.entity.UserInfo;
+import cn.studio.entity.viewmodel.UserInfoModel;
 import cn.studio.util.PageUtil;
 
 import java.util.Date;
@@ -28,4 +29,9 @@ public interface IUserInfoService {
     //05.1 写一个获取单页数据的方法  带条件查询
     public PageUtil<UserInfo> getOnePageData(int pageIndex,int pageSize,UserInfo info) throws  Exception;
 
+    //07.写一个添加学生的方法
+    public int addUserInfo(UserInfoModel info);
+
+    //08.根据年级编号查询学员姓名集合
+    public List<String> findStudentsByGradeId(Integer gid);
 }

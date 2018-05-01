@@ -1,63 +1,51 @@
-﻿<%@page pageEncoding="utf-8" language="java" isELIgnored="false" %>
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<%@page pageEncoding="utf-8" language="java" isELIgnored="false" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>欢迎登录后台管理系统</title>
-<link href="${pageContext.request.contextPath}/background/css/style.css" rel="stylesheet" type="text/css" />
-<script language="JavaScript" src="${pageContext.request.contextPath}/background/js/jquery.js"></script>
-<script src="${pageContext.request.contextPath}/background/js/cloud.js" type="text/javascript"></script>
-
-<script language="javascript">
-	$(function(){
-    $('.loginbox').css({'position':'absolute','left':($(window).width()-692)/2});
-	$(window).resize(function(){  
-    $('.loginbox').css({'position':'absolute','left':($(window).width()-692)/2});
-    })  
-});  
-</script> 
-
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Login</title>
+<link rel="stylesheet" id="login-css" href="${pageContext.request.contextPath}/background/vendor/styles/bootstrap.css"
+	type="text/css" media="all">
+	<link rel="shortcut icon" href="${pageContext.request.contextPath}/background/vendor/img/favicon.ico">
+<link href="${pageContext.request.contextPath}/background/vendor/styles/my-flat-ui.css" rel="stylesheet">
+<link href="${pageContext.request.contextPath}/background/vendor/styles/bootstrap-datetimepicker.css" rel="stylesheet">
 </head>
 
-<body style="background-color:#1c77ac; background-image:url(${pageContext.request.contextPath}/background/images/light.png); background-repeat:no-repeat; background-position:center top; overflow:hidden;">
-    <div id="mainBody">
-      <div id="cloud1" class="cloud"></div>
-      <div id="cloud2" class="cloud"></div>
-    </div>  
+<body style="background-color: #34495e">
 
 
-<div class="logintop">    
-    <span>欢迎登录五道口平台后台管理</span>
-    <ul>
-    <li><a href="#">回首页</a></li>
-    <li><a href="#">帮助</a></li>
-    <li><a href="#">关于</a></li>
-    </ul>    
-    </div>
-    
-    <div class="loginbody">
-    
-    <span class="systemlogo"></span> 
-       
-    <div class="loginbox">
-    
-    <form action="${pageContext.request.contextPath}/login" method="post">
-        <ul>
-            <li><input name="uid" type="text" class="loginuser" value="1"/></li>
-            <li><input name="upwd" type="text" class="loginpwd" value="1"/></li>
-            <li><input type="submit" class="loginbtn" value="登录"  /><label>
-                <input name="" type="checkbox" value="" checked="checked" />记住密码</label><label><a href="#">忘记密码？</a></label></li>
-        </ul>
-    </form>
-    
-    
-    </div>
-    
-    </div>
-    
-    
-    
-    <div class="loginbm">版权所有  微冷的雨  2018</div>
+	<div class="container col-md-2"></div>
+	<div class="container col-md-8">
+		<div class="login">
+			<div class="login-screen">
+				<div class="login-icon">
+					<img src="${pageContext.request.contextPath}/background/vendor/img/Retina-Ready.png" alt="欢迎登录五道口平台" />
+					<h4>
+						欢迎登录<small>五道口平台</small>
+					</h4>
+				</div>
+
+				<form name="loginform" id="loginform"
+					  action="${pageContext.request.contextPath}/login" method="post">
+					<div class="login-form">
+						<div class="form-group">
+							<input type="text" class="form-control login-field" value="1"
+								placeholder="请输入用户名" id="username" name="uid" />
+							<label class="login-field-icon fui-user" for="username"></label>
+						</div>
+
+						<div class="form-group">
+							<input type="password" class="form-control login-field" value="1"
+								placeholder="请输入密码" id="password" name="upwd" /> <label
+								class="login-field-icon fui-lock" for="password"></label>
+						</div>
+						<input type="submit" name="wp-submit" id="wp-submit"
+							class="btn btn-primary btn-lg btn-block" value="登录"> <a
+							class="login-link" href="#">忘记密码?</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
 </body>
 </html>

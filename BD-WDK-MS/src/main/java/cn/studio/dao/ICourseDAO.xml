@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+        <!DOCTYPE mapper
+                PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+                "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.studio.dao.ICourseDAO">
+    <!--课程-->
+    <resultMap id="BaseResultMap" type="TCourse" >
+        <id column="t_cid" property="tCid" jdbcType="INTEGER" />
+        <result column="t_cimage" property="tCimage" jdbcType="VARCHAR" />
+        <result column="t_cname" property="tCname" jdbcType="VARCHAR" />
+        <result column="t_cparent" property="tCparent" jdbcType="INTEGER" />
+        <result column="t_ccomment" property="tCcomment" jdbcType="INTEGER" />
+    </resultMap>
+
+
+    <!--1.获取所有课程集合 没有层级关系-->
+    <select id="getAllCourses" resultMap="BaseResultMap">
+    select * from sys_course
+  </select>
+    <!--2.获取精品视频-->
+    <select id="getWellVideo" resultMap="BaseResultMap">
+        select * from sys_course where t_type=1
+    </select>
+
+
+</mapper>

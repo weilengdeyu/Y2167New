@@ -5,17 +5,21 @@ package cn.studio.controller;/**
 import cn.studio.annotation.BusinessAnnotation;
 import cn.studio.entity.Privilege;
 import cn.studio.entity.UserInfo;
+import cn.studio.entity.viewmodel.UserInfoModel;
 import cn.studio.service.IPrivilegeService;
 import cn.studio.service.IUserInfoService;
+import cn.studio.util.ExcelUtilTool;
 import cn.studio.util.PageUtil;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.multipart.MultipartFile;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpSession;
+import java.io.File;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -50,10 +54,10 @@ public class UserInfoController {
             //更新用户最后一次登录时间
             userInfoService.updateLastLoginDate(uinfo.getUid());
             //登录成功，跳转到主界面
-            return "main";
+            return "/background/main";
         }else{
             //登录失败，跳回登录
-            return "login";
+            return "/background/login";
         }
     }
 
@@ -72,7 +76,7 @@ public class UserInfoController {
     public String userList(Model model) throws Exception {
         List<UserInfo> list = userInfoService.listAll();
         model.addAttribute("list",list);
-        return "userList";
+        return "/background/userList";
     }
 
     //4.获取某个用户所有权限的方法
@@ -148,7 +152,7 @@ public class UserInfoController {
     //06.获取单页数据的控制器方法
     @RequestMapping("/getPagedUsers")
     public String getPagedUsers() throws Exception {
-       return "userList";
+       return "/background/userList";
     }
     @RequestMapping("/getPagedUsersJson")
     @ResponseBody
@@ -164,6 +168,41 @@ public class UserInfoController {
         }
 
         return pageUtil;
+    }
+
+    //07.导入学员信息
+    @RequestMapping("/importUser")
+    public String importUser() {
+        return "/background/importUser";
+    }
+
+    ExcelUtilTool<UserInfoModel> tool=new ExcelUtilTool<UserInfoModel>();
+
+    //08.从Excel导入数据到Lis集合
+    @RequestMapping("/importFile")
+    @BusinessAnnotation(moduleName="导入学员信息",option="导入学员Excel到List")
+    @ResponseBody
+    public Object importFile(MultipartFile file,HttpSession session) throws Exception {
+        tool.setClazz(UserInfoModel.class);
+        String fileName=file.getOriginalFilename();
+        String leftPath = session.getServletContext().getRealPath("/background/tempfile");
+        //进行路径拼接
+        File fullFile=new File(leftPath,fileName);
+        file.transferTo(fullFile);
+        List<UserInfoModel> list=tool.ExcelToList(fullFile);
+        for (UserInfoModel info : list) {
+            userInfoService.addUserInfo(info);
+        }
+        UserInfo info=new UserInfo();
+        info.setUname("aa");
+        return info;
+    }
+    //09.根据年级编号查询学员姓名集合
+    @RequestMapping("/findStudentsByGradeId")
+    @ResponseBody
+    public Object findStudentsByGradeId(Integer gid){
+        List<String> list = userInfoService.findStudentsByGradeId(gid);
+        return list;
     }
 
     public IUserInfoService getUserInfoService() {

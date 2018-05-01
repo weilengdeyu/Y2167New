@@ -6,5 +6,6 @@
     <!--指定包下的      类型的简单名称 作为别名-->
     <typeAliases>
         <package name="cn.studio.entity"></package>
+        <package name="cn.studio.entity.viewmodel"></package>
     </typeAliases>
 </configuration>

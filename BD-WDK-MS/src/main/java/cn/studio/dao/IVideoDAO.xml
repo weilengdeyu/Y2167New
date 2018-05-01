@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+        <!DOCTYPE mapper
+                PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+                "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.studio.dao.IVideoDAO">
+    <resultMap id="BaseResultMap" type="Video" >
+        <id column="t_vid" property="tVid" jdbcType="INTEGER" />
+        <result column="t_vname" property="tVname" jdbcType="VARCHAR" />
+        <result column="t_vimage" property="tVimage" jdbcType="VARCHAR" />
+        <result column="t_vvideourl" property="tVvideourl" jdbcType="VARCHAR" />
+        <result column="t_cid" property="tCid" jdbcType="INTEGER" />
+        <result column="t_vparent" property="tVparent" jdbcType="INTEGER" />
+        <result column="t_comment" property="tComment" jdbcType="INTEGER" />
+        <result column="t_vprice" property="tVprice" jdbcType="DOUBLE" />
+    </resultMap>
+
+    <select id="getDetailVideoById"  resultMap="BaseResultMap">
+        select * from sys_video where t_cid=#{tid}
+    </select>
+    <!--2.获取视频对象-->
+    <select id="getOneVideo"  resultMap="BaseResultMap">
+        select * from sys_video where t_vid=#{vid}
+    </select>
+
+</mapper>

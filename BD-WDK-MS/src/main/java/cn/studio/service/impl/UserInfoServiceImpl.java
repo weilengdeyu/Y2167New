@@ -4,6 +4,7 @@ package cn.studio.service.impl;/**
 
 import cn.studio.dao.IUserInfoDAO;
 import cn.studio.entity.UserInfo;
+import cn.studio.entity.viewmodel.UserInfoModel;
 import cn.studio.service.IUserInfoService;
 import cn.studio.util.PageUtil;
 import org.springframework.stereotype.Service;
@@ -82,6 +83,14 @@ public class UserInfoServiceImpl implements IUserInfoService {
         //当前页码
         pageUtil.setPageIndex(pageIndex);
         return pageUtil;
+    }
+
+    public int addUserInfo(UserInfoModel info) {
+        return userInfoDAO.addUserInfo(info);
+    }
+
+    public List<String> findStudentsByGradeId(Integer gid) {
+        return userInfoDAO.findStudentsByGradeId(gid);
     }
 
 

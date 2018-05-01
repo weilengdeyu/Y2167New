@@ -46,7 +46,7 @@ public class RoleController {
 
     @RequestMapping("/roleList")
     public String findAllRoles() throws Exception {
-        return "roleList";
+        return "/background/roleList";
     }
 
     //根据角色编号获取所有权限集合方法

@@ -1,6 +1,7 @@
 package cn.studio.dao;
 
 import cn.studio.entity.UserInfo;
+import cn.studio.entity.viewmodel.UserInfoModel;
 import javafx.beans.binding.ObjectExpression;
 
 import java.util.Date;
@@ -29,5 +30,9 @@ public interface IUserInfoDAO {
     //06.写一个获取整张表记录总数的方法
    public int getTotalCount(UserInfo info);
 
+    //07.写一个添加学生的方法
+    public int addUserInfo(UserInfoModel info);
 
+    //08.根据年级编号查询学员姓名集合
+    public List<String> findStudentsByGradeId(Integer gid);
 }

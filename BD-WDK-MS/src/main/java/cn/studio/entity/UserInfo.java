@@ -13,34 +13,18 @@ import java.util.Date;
 public class UserInfo {
 
     private Integer   uid  ;
-    private String    uname  ;
-    private String    unickname  ;
-    private String    upwd  ;
-    private Integer   uroleid  ;
-    private String    uemail  ;
-    private String    uphone  ;
-    private String    uidentityid  ;
-    private Date      ubirthday  ;  //出生日期
-    private Integer   ugradeid  ; //年级编号
-    private String    ugender ; //性别
+    private String    uname ;
+    private String    unickname ;
+    private String    upwd ;
+    private Integer   uroleid ;
+    private String    uemail ;
+    private String    uphone ;
+    private String    uidentityid ;
+    private Date      ubirthday ;  //出生日期
+    private Integer   ugradeid ; //年级编号
+    private String    ugender; //性别
     private Date userLastLogin;
     private String userRegion;
-
-    public Date getUserLastLogin() {
-        return userLastLogin;
-    }
-
-    public void setUserLastLogin(Date userLastLogin) {
-        this.userLastLogin = userLastLogin;
-    }
-
-    public String getUserRegion() {
-        return userRegion;
-    }
-
-    public void setUserRegion(String userRegion) {
-        this.userRegion = userRegion;
-    }
 
     public Integer getUid() {
         return uid;
@@ -128,6 +112,22 @@ public class UserInfo {
 
     public void setUgender(String ugender) {
         this.ugender = ugender;
+    }
+
+    public Date getUserLastLogin() {
+        return userLastLogin;
+    }
+
+    public void setUserLastLogin(Date userLastLogin) {
+        this.userLastLogin = userLastLogin;
+    }
+
+    public String getUserRegion() {
+        return userRegion;
+    }
+
+    public void setUserRegion(String userRegion) {
+        this.userRegion = userRegion;
     }
 }
 

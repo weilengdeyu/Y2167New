@@ -12,14 +12,28 @@
 
     <!--1.视图解析器-->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-        <property name="prefix" value="/background/"></property>
+        <property name="prefix" value="/"></property>
         <property name="suffix" value=".jsp"></property>
     </bean>
     <!--2.包扫描器-->
     <context:component-scan base-package="cn.studio"></context:component-scan>
+    <!--注册一个解析器-->
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <property name="defaultEncoding" value="utf-8"></property>
+        <property name="maxUploadSize" value="31457280"></property>
+    </bean>
+
+
+    <!--自己定义了类型转换器-->
+    <bean id="myConverter" class="cn.studio.util.MyConverter"></bean>
+
+    <!--类型转换服务工厂bean-->
+    <bean id="conversionService" class="org.springframework.context.support.ConversionServiceFactoryBean">
+        <property name="converters" ref="myConverter"></property>
+    </bean>
 
     <!--3.注解驱动-->
-    <mvc:annotation-driven></mvc:annotation-driven>
+    <mvc:annotation-driven conversion-service="conversionService"></mvc:annotation-driven>
 
 
     <!--1.数据源 阿里-->

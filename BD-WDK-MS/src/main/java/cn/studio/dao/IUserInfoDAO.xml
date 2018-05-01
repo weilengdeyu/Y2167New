@@ -44,4 +44,16 @@
             </if>
         </where>
     </select>
+
+    <!--07.写一个添加用户的方法-->
+    <insert id="addUserInfo">
+        insert into userinfo(uname,unickname,upwd,uroleid,uemail,uphone,uidentityid,ubirthday,ugradeid,ugender)
+        values(#{uname},#{unickname},#{upwd},#{uroleid},#{uemail},#{uphone},#{uidentityid},#{ubirthday},#{ugradeid},#{ugender})
+    </insert>
+
+    <!--08.根据年级编号查询学员姓名集合-->
+    <select id="findStudentsByGradeId" resultType="string">
+        select uname from userinfo
+        where ugradeid=#{gid}
+    </select>
 </mapper>
