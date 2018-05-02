@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>登陆</title>
+    <script type="application/javascript" src="/js/jquery-1.8.3.min.js"/>
+    <script type="application/javascript">
+        function check() {
+
+            var flag=true;
+            if($("[name=userName]").val().trim()==""||$("[name=userName]").val().trim()==null)
+            {
+                alert("用户名必填！");
+                return flag=false;
+            }
+            if($("[name=password]").val().trim()==""||$("[name=password]").val().trim()==null)
+            {
+                alert("密码必填！");
+                return flag=false;
+            }
+            return flag;
+
+        }
+    </script>
+</head>
+<body>
+<div align="center">
+    <h1>小型进销存系统</h1>
+    <form action="/user/login" method="post" onsubmit="return check()">
+        用户名：<input type="text" name="userName" placeholder="请输入用户名"/>
+        <br/>
+        密&nbsp;&nbsp;&nbsp;码：<input type="password" name="password" placeholder="请输入密码"/>
+        <br/>
+        <input type="submit" value="登录"/>
+    </form>
+</div>
+</body>
+</html>
