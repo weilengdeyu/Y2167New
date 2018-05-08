@@ -28,6 +28,10 @@ public class CourseServiceImpl implements ICourseService{
         return courseDAO.getWellVideo();
     }
 
+    public TCourse getCourseById(int id) {
+        return courseDAO.getCourseById(id);
+    }
+
     public ICourseDAO getCourseDAO() {
         return courseDAO;
     }

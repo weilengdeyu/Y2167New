@@ -10,6 +10,8 @@
         <result column="t_cname" property="tCname" jdbcType="VARCHAR" />
         <result column="t_cparent" property="tCparent" jdbcType="INTEGER" />
         <result column="t_ccomment" property="tCcomment" jdbcType="INTEGER" />
+        <result column="t_course_type" property="tCourseType" jdbcType="VARCHAR" />
+        <result column="t_price" property="tPrice" jdbcType="DECIMAL" />
     </resultMap>
 
 
@@ -20,6 +22,11 @@
     <!--2.获取精品视频-->
     <select id="getWellVideo" resultMap="BaseResultMap">
         select * from sys_course where t_type=1
+    </select>
+
+    <!--3.根据课程编号，获取课程对象-->
+    <select id="getCourseById" resultMap="BaseResultMap">
+        select * from sys_course where t_cid=#{id}
     </select>
 
 

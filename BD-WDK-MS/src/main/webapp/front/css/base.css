@@ -291,6 +291,7 @@ img,select,option{ border: 0px;}
 .w-360{ width:360px;}
 .w-375{ width:375px;}
 .w-380{ width:380px;}
+.w-400{ width:400px;}
 .w-410{ width:410px;}
 .w-420{ width:420px;}
 .w-430{ width:430px;}
@@ -439,9 +440,12 @@ img,select,option{ border: 0px;}
 .hg-185{ height: 185px;}
 .hg-193{ height: 193px;}
 .hg-200{ height: 200px;}
+.hg-210{ height: 210px;}
 .hg-225{ height: 225px;}
 .hg-228{ height: 228px;}
 .hg-230{ height: 230px;}
+.hg-260{ height: 260px;}
+.hg-300{ height: 300px;}
 .hg-338{ height: 338px;}
 .hg-390{ height: 390px;}
 .hg-500{ height: 500px;}
@@ -529,10 +533,10 @@ img,select,option{ border: 0px;}
 .hc_lnav{z-index:9999;position:relative;width:250px;}
 .hc_lnav .allbtn{z-index:99999;position:relative}
 .hc_lnav .allbtn h2{font-size:14px;}
-.hc_lnav .allbtn h2 a{line-height:60px; background:url('../images/all_navicon.png') #033354 no-repeat left top;width:250px; text-align:center;display:block;height:60px;color:#ffffff;font-size:14px;font-weight:normal; font-size:18px;}
+.hc_lnav .allbtn h2 a{line-height:60px; background:url('../images/all_navicon.png') #2B333B no-repeat left top;width:250px; text-align:center;display:block;height:60px;color:#ffffff;font-size:14px;font-weight:normal; font-size:18px;}
 .hc_lnav .allbtn h2 i{}
 .hc_lnav .allbtn h2 strong{}
-.hc_lnav .allbtn ul{z-index:99999;position:absolute;background-color:rgba(3,51,84,0.9);width:250px;display:none;height:400px;top:60px;left:0px}
+.hc_lnav .allbtn ul{z-index:99999;position:absolute;background-color:#2B333B;width:250px;display:none;height:400px;top:60px;left:0px}
 .hc_home .hc_lnav .allbtn ul{display:block}
 .hc_list .hc_lnav .allbtn ul{display:block}
 .hc_lnav .allbtn ul li{padding-top:7px;zoom:1;clear:both;cursor:default;
@@ -552,7 +556,7 @@ img,select,option{ border: 0px;}
 .hc_lnav .allbtn ul li .pop dd a{ padding:0px 10px;}
 .hc_lnav .allbtn ul li .pop .act{width:100%;height:80px;overflow:hidden;padding-top:10px}
 .hc_lnav .allbtn:hover ul{display:block}
-.hc_lnav .allbtn ul li:hover{background-color: rgba(62, 109, 149, 0.98)
+.hc_lnav .allbtn ul li:hover{background-color:#2BA2B8 /*rgba(62, 109, 149, 0.98)*/
 }
 
 .hc_lnav .allbtn ul li:hover .tx a{color:#ffffff}
@@ -589,9 +593,11 @@ img,select,option{ border: 0px;}
 .home_calss{ margin-left: -13px;}
 .home_calss li,.ql_likeclass li{ position: relative;}
 .home_calss li a,.ql_likeclass li a,.ql_sclist li a.ql_sc_img{ position: relative;}
-.home_calss li a img{ position:absolute; width: 280px; height: 200px; top: 0px; left: 0px;}
-.home_calss li:hover img{ width: 336px; height:240px; left:-28px; top: -20px;transition:all 0.5s;}
-.home_calss li:hover,.ql_likeclass li:hover{-webkit-box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.1);-moz-box-shadow:0px 0px 8px 2px rgba(0,0,0,0.1);box-shadow:0px 0px 8px 2px rgba(0,0,0,0.1); top: -8px; transition:all 0.5s;}
+.home_calss li a img{ position:absolute; width:260px; height:160px; top: 0px; left: 0px;}
+.home_calss2 li a img{ position:absolute; width:300px; height:338px; top: 0px; left: 0px;}
+
+.home_calss li:hover img{ width: 260px; height:160px; left:3px; top: 1px;transition:all 0.5s;}
+/*.home_calss li:hover,.ql_likeclass li:hover{-webkit-box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.1);-moz-box-shadow:0px 0px 8px 2px rgba(0,0,0,0.1);box-shadow:0px 0px 8px 2px rgba(0,0,0,0.1); top: -8px; transition:all 0.5s;}*/
 .ql_sclist li:hover,.rig_scool li:hover,.ql_news li:hover{-webkit-box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.1);-moz-box-shadow:0px 0px 8px 2px rgba(0,0,0,0.1);box-shadow:0px 0px 8px 2px rgba(0,0,0,0.1);transition:all 0.5s;}
 
 .ql_likeclass li a img{ position:absolute; width: 230px; height: 165px; top: 0px; left: 0px;}
@@ -643,3 +649,22 @@ img,select,option{ border: 0px;}
 /*荣誉资质 end*/
 .ps-f{ position: fixed; top: 0px; z-index: 99999;}
 .qlban_ad{ right: 0px; top: 42px; z-index: 999999;}
+
+.course-label{
+    position: absolute;
+    bottom: 6px;
+    left: 8px;
+    font-size: 12px;
+    color: #FFF;
+    line-height: 16px;
+}
+
+.course-label label {
+    display: inline-block;
+    background: rgba(7,17,27,.4);
+    border-radius: 12px;
+    padding: 4px 8px;
+    margin-bottom: 2px;
+    margin-right: 0;
+    font-weight: 200;
+}

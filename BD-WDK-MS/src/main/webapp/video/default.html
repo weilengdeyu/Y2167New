@@ -1,0 +1,44 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>11111</title>
+    <!-- Flowplayer skin -->
+    <link rel="stylesheet" href="http://releases.flowplayer.org/7.0.2/skin/skin.css">
+    <style>
+        .flowplayer {
+            background-color: #bbb;
+        }
+    </style>
+    <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="http://releases.flowplayer.org/7.0.2/flowplayer.min.js"></script>
+
+    <script>
+        // display information about the video type
+        flowplayer(function (api) {
+            api.on("load", function (e, api, video) {
+                $("#vinfo").text(api.engine.engineName + " engine playing " + video.type);
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+<div id="content">
+
+    <h1>Flowplayer · HLS support</h1>
+
+    <div class="flowplayer" data-ratio="0.5625">
+
+        <video>
+            <source type="application/x-mpegurl" src="http://218.204.141.227:28880/hls/cctv-1_360p/index.m3u8">
+        </video>
+
+    </div>
+
+    <p id="vinfo" class="info">&nbsp;</p>
+
+</div>
+</body>
+</html>

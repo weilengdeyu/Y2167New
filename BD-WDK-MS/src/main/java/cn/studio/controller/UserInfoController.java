@@ -39,7 +39,21 @@ public class UserInfoController {
     //注入权限的Service
     @Resource(name = "privilegeService")
     private IPrivilegeService privilegeService;
-    //1.登录
+
+    //00.前台登录
+    @RequestMapping("/loginFront")
+    @ResponseBody
+    public Object isLoginFront(UserInfo info,HttpSession session,String returnurl) throws Exception {
+        UserInfo uinfo = userInfoService.isLogin(info);
+        if (uinfo!=null&&uinfo.getUname()!=null) {
+            session.setAttribute("userInfo",uinfo);
+          return returnurl;  //代表登录成功
+        }else{
+            return "0"; //代表登录失败！
+        }
+    }
+
+    //1.后台登录
     @RequestMapping("/login")
     @BusinessAnnotation(moduleName = "系统管理",option = "登录")
     public String isLogin(UserInfo info, HttpSession session) throws Exception {
@@ -69,6 +83,14 @@ public class UserInfoController {
         //1.清空session
         //2.跳转到登录
         return "redirect:/background/login.jsp";
+    }
+
+    //2.1 前台登出系统
+    @RequestMapping("/logoutFront")
+    @ResponseBody
+    public Object loginOutFront(HttpSession session) {
+        session.removeAttribute("userInfo");
+        return "logout";
     }
 
     //3.用户列表

@@ -63,7 +63,7 @@ public class CourseController {
     //02.获取精品视频
     public List<TCourse> getWellVideo(){
         List<TCourse> wellVideo = courseService.getWellVideo();
-    return wellVideo;
+        return wellVideo;
     }
 
     //03.根据视频分类编号，获取该分类下所有视频集合
@@ -72,5 +72,13 @@ public class CourseController {
         List<Video> list = videoService.getDetailVideoById(tid);
         model.addAttribute("videoList",list);
         return "/front/courselist";
+    }
+
+    //04.点击首页后，进入课程详情
+    @RequestMapping("/getCourseDetail/{id}")
+    public String getCourseDetail(@PathVariable int id,Model model){
+        TCourse course = courseService.getCourseById(id);
+        model.addAttribute("course",course);
+        return "/front/coursedetail";
     }
 }

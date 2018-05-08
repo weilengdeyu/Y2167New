@@ -13,4 +13,7 @@ public interface ICourseDAO {
 
     //2.获取精品视频集合，1代表精品，0代表非精品视频
     public List<TCourse> getWellVideo();
+
+    //3.根据课程编号，获取课程实例
+    public TCourse getCourseById(int id);
 }

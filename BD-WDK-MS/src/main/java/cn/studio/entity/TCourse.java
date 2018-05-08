@@ -1,5 +1,7 @@
 package cn.studio.entity;
 
+import java.math.BigDecimal;
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,6 +15,10 @@ public class TCourse {
     private Integer tCparent;
 
     private Integer tCcomment;
+
+    private String tCourseType;
+
+    private Double tPrice;
 
     //植入父节点属性
     private  Integer parent;
@@ -75,5 +81,21 @@ public class TCourse {
 
     public void settCcomment(Integer tCcomment) {
         this.tCcomment = tCcomment;
+    }
+
+    public String gettCourseType() {
+        return tCourseType;
+    }
+
+    public void settCourseType(String tCourseType) {
+        this.tCourseType = tCourseType;
+    }
+
+    public Double gettPrice() {
+        return tPrice;
+    }
+
+    public void settPrice(Double tPrice) {
+        this.tPrice = tPrice;
     }
 }

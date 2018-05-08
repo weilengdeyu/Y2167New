@@ -5,7 +5,7 @@
 <mapper namespace="cn.studio.dao.IUserInfoDAO">
     <!--1.用户登录的sql-->
     <select id="isLogin"  resultType="UserInfo">
-        select * from UserInfo where uid = #{uid} and upwd=#{upwd}
+        select * from UserInfo where uname = #{uname} and upwd=#{upwd}
     </select>
 
     <!--2.检索表中所有的用户信息-->

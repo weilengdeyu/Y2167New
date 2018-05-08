@@ -30,7 +30,7 @@
 					<div class="login-form">
 						<div class="form-group">
 							<input type="text" class="form-control login-field" value="1"
-								placeholder="请输入用户名" id="username" name="uid" />
+								placeholder="请输入用户名" id="username" name="uname" />
 							<label class="login-field-icon fui-user" for="username"></label>
 						</div>
 
