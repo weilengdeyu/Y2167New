@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <!--引入js的时候切记 不需要加 springboot的默认文件名称-->
+    <script type="text/javascript" th:src="@{/js/jquery-1.8.3.min.js}"></script>
+    <script type="text/javascript">
+           window.onload=function () {
+               $("tr:odd").css("background","pink");
+           }
+
+    </script>
+    <title>Title</title>
+    <style type="text/css">
+        table{
+            border-collapse: collapse;
+        }
+    </style>
+
+</head>
+<body>
+<table  width="50%" border="1" align="center">
+     <caption><h1 style="height: 50px;line-height5:0px;border: 1px">新闻列表</h1></caption>
+    <thead>
+    <tr class="t_head">
+        <th>新闻编号</th>
+        <th>新闻标题</th>
+        <th>新闻摘要</th>
+        <th>作者</th>
+        <th>发布时间</th>
+        <th>操作</th>
+    </tr>
+    </thead>
+    <tbody id="list-content">
+    </tbody>
+</table>
+<div  id="isOK"></div>
+<script type="text/javascript">
+
+    load();  //默认初始化
+    /*点击查询的触发事件*/
+   function  load() {
+       $.ajax({
+           url: "/findAll",
+           type: "post",
+           success: function (data) {
+               //清空数据
+               $("#list-content").html('');
+               //追加数据
+               $.each(data, function (i, dom) {
+                   //一个dom就是一个新闻对象
+                   $("#list-content").append("<tr><td>"+ dom.id + "</td><td>" + dom.title + "</td><td>" + dom.summary + "</td><td>" + dom.author + "</td><td >" + dom.createDate + "</td>"+
+                       "<td><a href=reply?nid="+dom.id+">评论</a>"+"||<a id=del"+dom.id+" href=javascript:del("+dom.id+",this)>删除</a></td> "  +"</tr>");
+               });
+               $("tr:odd").css("background","pink");
+           }
+       });
+   };
+
+
+    function del(id,dom){
+        //把删除的路径赋值给隐藏域
+       var flag= confirm("确认删除吗？");
+       if(flag){
+           $.ajax({
+               url:"/delNews?id="+id,
+               type:"POST",
+               success:function (data) {
+                   if(data){
+                       $("#del"+id).parent().parent().remove();
+                           $("tr:odd").css("background","pink");
+
+
+                       //$("#isOK").html("删除成功").hide(2000);
+                   }else{
+                       $("#isOK").html("删除失败");
+                   }
+                   $("tr:odd").css("background","pink");
+               }
+
+           });
+       }
+    }
+</script>
+</body>
+</html>
