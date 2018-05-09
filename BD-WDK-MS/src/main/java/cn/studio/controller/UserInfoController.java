@@ -47,7 +47,7 @@ public class UserInfoController {
         UserInfo uinfo = userInfoService.isLogin(info);
         if (uinfo!=null&&uinfo.getUname()!=null) {
             session.setAttribute("userInfo",uinfo);
-          return returnurl;  //代表登录成功
+          return "1";  //代表登录成功
         }else{
             return "0"; //代表登录失败！
         }

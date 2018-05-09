@@ -78,6 +78,7 @@ public class CourseController {
     @RequestMapping("/getCourseDetail/{id}")
     public String getCourseDetail(@PathVariable int id,Model model){
         TCourse course = courseService.getCourseById(id);
+        System.out.println(course.getVideoList().size());
         model.addAttribute("course",course);
         return "/front/coursedetail";
     }

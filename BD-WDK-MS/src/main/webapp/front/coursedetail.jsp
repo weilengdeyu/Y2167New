@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" isELIgnored="false" %>
 <!DOCTYPE html>
 <html>
@@ -112,91 +113,32 @@
             <div class="w-1140 p-l-30 p-r-30 bg-c-ffffff p-b-30 ovhidden">
                 <h3 class="fs-16 ft-w-b ftc-e9511b line-26 p-l-15 m-t-15 m-b-15 line_h3 fl">课程介绍</h3>
                 <div class="w-1115 p-l-15 fs-16 line-h26 ftc-636363 fl">
-                    Java是一门纯粹的面向对象编程语言，不仅吸收了C++语言的各种优点，还摒弃了C++里难以理解的多继承、指针等概念，具有简单性、面向对象、分布式、健壮性、安全性、平台独立与可移植性、多线程、动态性等特点。
-                    本课程将带领大家走入Java程序开发的殿堂，教您从0到1开发Java程序。包括Java的发展历史，变量，分支结构，循环结构，数组和面向对象基础。
+                    ${course.tCourseIntroduce}
                 </div>
                 <h3 class="fs-16 ft-w-b ftc-e9511b line-26 p-l-15 m-t-15 m-b-15 line_h3 fl">教学目标</h3>
-                <div class="w-1115 p-l-15 fs-16 line-h26 ftc-636363 fl">掌握Java入门级开发的基本思维方式<br/>
+                <div class="w-1115 p-l-15 fs-16 line-h26 ftc-636363 fl">${course.tCourseTarget}<br/>
                     <br/>
                 </div>
                 <h3 class="fs-16 ft-w-b ftc-e9511b line-26 p-l-15 m-t-15 m-b-15 line_h3 fl">适合人群</h3>
-                <div class="w-1115 p-l-15 fs-16 line-h26 ftc-636363 fl"> <br/>
-                    小白程序员、编程爱好者 </div>
+                <div class="w-1115 p-l-15 fs-16 line-h26 ftc-636363 fl">
+                    ${course.tCompatiblePeople}
+                     </div>
                 <h3 class="fs-16 ft-w-b ftc-e9511b line-26 p-l-15 m-t-15 m-b-15 line_h3 fl">课程目录</h3>
                 <div class="w-1115 p-l-15 fs-16 line-h26 ftc-636363 fl">
                     <fieldset class="layui-elem-field layui-field-title" style="margin-top: 30px;">
                         <legend>视频目录</legend>
                     </fieldset>
                     <ul class="layui-timeline">
-                        <li class="layui-timeline-item">
-                            <i class="layui-icon layui-timeline-axis"></i>
-                            <div class="layui-timeline-content layui-text">
-                                <div class="layui-timeline-title">初识Java-01：学习方法的探讨
-                                <p style="background: #02B980;float:right;margin-right:20px;border-radius: 15px;display: none;width:100px;text-align: center" >开始学习</p>
-                            </div>
-                            </div>
-                        </li>
-                        <li class="layui-timeline-item">
-                            <i class="layui-icon layui-timeline-axis"></i>
-                            <div class="layui-timeline-content layui-text">
-                                <div class="layui-timeline-title">初识Java-02：程序的概念
-                                <p style="background: pink;float:right;margin-right:20px;border-radius: 15px;display: none;width:100px;text-align: center" >开始学习</p>
-                            </div>
-                            </div>
-                        </li>
-                        <li class="layui-timeline-item">
-                            <i class="layui-icon layui-timeline-axis"></i>
-                            <div class="layui-timeline-content layui-text">
-                                <div class="layui-timeline-title">初识Java-03：Java周边的技术<p style="background: pink;float:right;margin-right:20px;border-radius: 15px;display: none;width:100px;text-align: center" >开始学习</p></div>
-
-                            </div>
-                        </li>
-                        <li class="layui-timeline-item">
-                            <i class="layui-icon layui-timeline-axis"></i>
-                            <div class="layui-timeline-content layui-text">
-                                <div class="layui-timeline-title">初识Java-04：使用记事本开发第一个Java程序<p style="background: pink;float:right;margin-right:20px;border-radius: 15px;display: none;width:100px;text-align: center" >开始学习</p></div>
-
-                            </div>
-                        </li>
-                        <li class="layui-timeline-item">
-                            <i class="layui-icon layui-timeline-axis"></i>
-                            <div class="layui-timeline-content layui-text">
-                                <div class="layui-timeline-title">初识Java-05：Java程序的编译过程
-                                <p style="background: #51B7EC;float:right;margin-right:20px;border-radius: 15px;display: none;width:100px;text-align: center" >开始学习</p>
-                            </div>
-                            </div>
-
-                        </li>
-                        <li class="layui-timeline-item">
-                            <i class="layui-icon layui-timeline-axis"></i>
-                            <div class="layui-timeline-content layui-text">
-                                <div class="layui-timeline-title">初识Java-06：常见错误
-                                <p style="background: pink;float:right;margin-right:20px;border-radius: 15px;display: none;width:100px;text-align: center" >开始学习</p>
-                            </div>
-                            </div>
-                        </li>
-                        <li class="layui-timeline-item">
-                            <i class="layui-icon layui-timeline-axis"></i>
-                            <div class="layui-timeline-content layui-text">
-                                <div class="layui-timeline-title">初识Java-07：MyEclipse的使用
-                                <p style="background: pink;float:right;margin-right:20px;border-radius: 15px;display: none;width:100px;text-align: center" >开始学习</p>
-                            </div>
-                            </div>
-                        </li>
-                        <li class="layui-timeline-item">
-                            <i class="layui-icon layui-timeline-axis"></i>
-                            <div class="layui-timeline-content layui-text">
-                                <div class="layui-timeline-title">初识Java-08：println和转义符的讲解
-                                <p style="background: pink;float:right;margin-right:20px;border-radius: 15px;display: none;width:100px;text-align: center" >开始学习</p>
-                            </div>
-                            </div>
-                        </li>
-                        <li class="layui-timeline-item">
-                            <i class="layui-icon layui-timeline-axis"></i>
-                            <div class="layui-timeline-content layui-text">
-                                <div class="layui-timeline-title">变量，数据类型和运算符-01：注释讲解 <p style="background: pink;float:right;margin-right:20px;border-radius: 15px;display: none;width:100px;text-align: center" >开始学习</p></div>
-                            </div>
-                        </li>
+                        <c:forEach items="${course.videoList}" var="item">
+                            <li class="layui-timeline-item">
+                                <i class="layui-icon layui-timeline-axis"></i>
+                                <div class="layui-timeline-content layui-text">
+                                    <div class="layui-timeline-title">${item.tVname}
+                                        <p style="background: #02B980;float:right;margin-right:20px;border-radius: 15px;display: none;width:100px;text-align: center" >开始学习</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </c:forEach>
 
                     </ul>
                 </div>

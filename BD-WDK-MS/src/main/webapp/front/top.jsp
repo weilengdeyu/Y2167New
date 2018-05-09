@@ -112,12 +112,12 @@
             });
             return;
         }
-        //认证通过
+        //uname和upwd均 认证通过，向后台发送ajax
         $.ajax({
-            url:"${pageContext.request.contextPath}/loginFront?returnurl="+window.location.href,
+            url:"${pageContext.request.contextPath}/loginFront", //?returnurl="+window.location.href
             method:"POST",
             data:{"uname":username,"upwd":userpwd},
-            success:function (data) {
+            success:function (data) { //data就是从哪个页面过来的
                 if(data!="0"){
                     //配置一个透明的询问框
                     layer.msg('登录成功', {
@@ -125,8 +125,9 @@
                         end:function () {
                             //关闭窗体
                             layer.close(index);
+                            location.reload();
                             //跳转
-                            location.href=data;
+                            //location.href=data;
                             /* var index = parent.layer.getFrameIndex(window.name);
                              parent.layer.close(index);*/
                             //更改登录文本

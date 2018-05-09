@@ -20,11 +20,21 @@ public class TCourse {
 
     private Double tPrice;
 
+    private String tCourseIntroduce;
+
+    private String tCourseTarget;
+
+    private String tCompatiblePeople;
+
+
     //植入父节点属性
     private  Integer parent;
 
     //植入子元素集合
     private List<TCourse> children=new ArrayList<TCourse>();
+
+    //植入该课程对应的视频集合
+    private List<Video> videoList=new ArrayList<Video>();
 
 
     public Integer getParent() {
@@ -97,5 +107,37 @@ public class TCourse {
 
     public void settPrice(Double tPrice) {
         this.tPrice = tPrice;
+    }
+
+    public String gettCourseIntroduce() {
+        return tCourseIntroduce;
+    }
+
+    public void settCourseIntroduce(String tCourseIntroduce) {
+        this.tCourseIntroduce = tCourseIntroduce;
+    }
+
+    public String gettCourseTarget() {
+        return tCourseTarget;
+    }
+
+    public void settCourseTarget(String tCourseTarget) {
+        this.tCourseTarget = tCourseTarget;
+    }
+
+    public String gettCompatiblePeople() {
+        return tCompatiblePeople;
+    }
+
+     public void settCompatiblePeople(String tCompatiblePeople) {
+        this.tCompatiblePeople = tCompatiblePeople;
+    }
+
+    public List<Video> getVideoList() {
+        return videoList;
+    }
+
+    public void setVideoList(List<Video> videoList) {
+        this.videoList = videoList;
     }
 }

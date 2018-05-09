@@ -3,6 +3,20 @@
                 PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
                 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="cn.studio.dao.ICourseDAO">
+
+    <resultMap id="VideoMap" type="Video" >
+        <id column="t_vid" property="tVid" jdbcType="INTEGER" />
+        <result column="t_vname" property="tVname" jdbcType="VARCHAR" />
+        <result column="t_vimage" property="tVimage" jdbcType="VARCHAR" />
+        <result column="t_vvideourl" property="tVvideourl" jdbcType="VARCHAR" />
+        <result column="t_cid" property="tCid" jdbcType="INTEGER" />
+        <result column="t_vparent" property="tVparent" jdbcType="INTEGER" />
+        <result column="t_comment" property="tComment" jdbcType="INTEGER" />
+        <result column="t_vprice" property="tVprice" jdbcType="DOUBLE" />
+    </resultMap>
+
+
+
     <!--课程-->
     <resultMap id="BaseResultMap" type="TCourse" >
         <id column="t_cid" property="tCid" jdbcType="INTEGER" />
@@ -12,8 +26,17 @@
         <result column="t_ccomment" property="tCcomment" jdbcType="INTEGER" />
         <result column="t_course_type" property="tCourseType" jdbcType="VARCHAR" />
         <result column="t_price" property="tPrice" jdbcType="DECIMAL" />
+        <result column="t_courseintroduce" property="tCourseIntroduce" jdbcType="VARCHAR" />
+        <result column="t_coursetarget" property="tCourseTarget" jdbcType="VARCHAR" />
+        <result column="t_CompatiblePeople" property="tCompatiblePeople" jdbcType="VARCHAR" />
+        <!--关联视频集合-->
+        <collection property="videoList" ofType="Video" select="selectVideoListByCourseId" column="t_cid">
+        </collection>
     </resultMap>
 
+    <select id="selectVideoListByCourseId" resultMap="VideoMap">
+        select * from sys_video where t_cid=#{t_cid}
+    </select>
 
     <!--1.获取所有课程集合 没有层级关系-->
     <select id="getAllCourses" resultMap="BaseResultMap">
