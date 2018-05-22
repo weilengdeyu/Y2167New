@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.happy.mapper.IAirDAO" >
+
+    <!--01.查询所有记录-->
+     <select id="findAll" resultType="cn.happy.entity.AirModel">
+         select * from air_quality_index
+     </select>
+
+    <insert id="addAir">
+        insert into air_quality_index(district,monitorTime,pm10,pm25,monitoringStation,createDate) values(#{district},#{monitorTime},#{pm10},#{pm25},#{monitoringStation},now())
+    </insert>
+    
+    <!--修改-->
+    <update id="updateAir">
+        update air_quality_index set district=#{district},monitorTime=#{monitorTime},pm10=#{pm10},pm25=#{pm25},monitoringStation=#{monitoringStation},createDate=now()
+        where id=#{id}
+    </update>
+    <!--按条件查询-->
+    <select id="findAirByCondition" resultType="cn.happy.entity.AirModel">
+        select * from air_quality_index where district=#{district}
+    </select>
+    <!--查询单项-->
+    <select id="selectOneById" resultType="cn.happy.entity.AirModel">
+       select * from air_quality_index where id=#{id}
+    </select>
+</mapper>
