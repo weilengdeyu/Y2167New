@@ -1,0 +1,126 @@
+1.SpringBoot简介
+Spring Boot是由【Pivotal团队】提供的全新框架，其设计目的是用来【简化新Spring应用】的【初始搭建】以及【开发过程。】
+为平台带来另一种开发体验，从而简化对这些已有技术的使用。
+2.SpringBoot初体验
+  2.1 通过模板创建骨架
+  2.2 创建一个Controller ，注解 RestController   目标：他里面的所有方法返回的类型都是Json
+  2.3 Run
+3.节点的含义
+  <parent>
+    <artifactid>spring-boot-starter-parent</atifactid>
+  </parent>
+
+4.SpringBoot演进历程  V2.0.3 Realase版本
+5.更改内置的Tomcat 8.0  的监听端口
+   在application.properties 文件中
+     server.port=9090
+   测试：方式一：cmd ---->键入 telnet localhost 9090
+   方式二：直接通过浏览器，，，输入 http://localhost:9090
+5.改造Controller
+    @RestController
+    public class HelloController {
+        @RequestMapping("/")
+        public Object hello(){
+            return "Hello,SpringBoot";
+        }
+    }
+6.java.version属性
+<properties>
+    <java.version>1.8</java.version>
+</properties>
+
+7.spring-boot-starter-web  实现web功能
+spring-boot-starter-*
+spring-boot-starter-x jdbc
+spring-boot-starter-y mail
+spring-boot-starter-z aop
+spring-boot-starter-a redis
+
+8.spring-boot-maven-plugin
+     编译  mvn package
+     启动  mvn spring-boot:run
+
+9.热部署设置
+<!-- 可以实现热部署 -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+
+10.解决8080端口占用问题
+   查看某个端口被哪个进程占用
+   netstat -ano |findstr 8080
+   杀死某个进程号对应的进程
+   taskkill /pid 进程号 /f
+
+
+11.将SpringBoot框架默认的Web服务器换成Jetty
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-web</artifactId>
+    <exclusions>
+        <!---->
+        <exclusion>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-tomcat</artifactId>
+        </exclusion>
+    </exclusions>
+</dependency>
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-jetty</artifactId>
+</dependency>
+
+12.关键的注解的说明
+@RestController //等价于Controller +ResponseBody
+
+@SpringBootApplication
+由于大量项目都会在【主要的配置类】上添加@Configuration,@EnableAutoConfiguration,@ComponentScan三个注解。
+因此Spring Boot提供了@SpringBootApplication注解，该注解可以替代上面三个注解（使用Spring注解继承实现）。
+
+------以上都是有外网，通过骨架去构建SpringBoot程序，如果说没有网络？？？？？？可以使用maven的方式
+Maven的方式
+
+
+
+
+2018年7月6日13:52:18
+1.搜索引擎框架
+  百度
+  google
+
+  Lucene  单机操作  ，就是一堆Jar包中的api的使用  自己干预，如何创建索引库 ，删除索引库，更新索引库 ，高亮。自己调度API
+  Solr     支持web应用研发，  他封装好了对索引库的操作，直接做高级API编程。
+  ElasticSearch   默认支持集群的，调度  统一协调 ，任务派发   Zookeeper  （KeepAlived 简单）
+
+  索引：
+      全文索引
+      SQL Server全文索引
+      Mysql全文索引
+   
+ElasticsearchRepository（能力一定最强的）-----》ElasticsearchCrudRepository------》PagingAndSortingRepository---->CrudRepository
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

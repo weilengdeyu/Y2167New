@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4"
+>
+<head>
+    <meta charset="UTF-8">
+    <title>博客系统</title>
+    <script type="text/javascript" th:src="@{/js/jquery-1.8.3.min.js}"></script>
+    <script type="text/javascript">
+
+    </script>
+</head>
+<body>
+   <div>
+       <!--authorize:认证：-->
+      <div sec:authorize="isAuthenticated()">
+          <p>登录的用户名为：<span sec:authentication="name"></span></p>
+          <p>登录的权限为：<span sec:authentication="principal.authorities"></span></p>
+      </div>
+       <!--ftp:匿名的，未经过认证的-->
+       <div sec:authorize="isAnonymous()">
+            <p>未登录</p>
+       </div>
+   </div>
+</body>
+</html>
